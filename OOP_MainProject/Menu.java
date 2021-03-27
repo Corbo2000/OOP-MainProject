@@ -1,4 +1,4 @@
-package OOP_MainProject;
+package OOP_MainProject.OOP_MainProject;
 
 public interface Menu {
     abstract public void testMethod();
