@@ -6,8 +6,11 @@ public class Main {
 	// changes to update repository
         //add somethingS
         //Hey, it's me
+<<<<<<< HEAD:OOP_MainProject/Main.java
         //Hola papi
         Menu test = new testClass();
         test.testMethod();
+=======
+>>>>>>> parent of 48a0d37 (Testing 123!):Main.java
     }
 }
