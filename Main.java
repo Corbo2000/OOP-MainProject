@@ -1,4 +1,4 @@
-package com.company.OOP_MainProject;
+package OOP_MainProject;
 
 public class Main {
 
