@@ -7,5 +7,7 @@ public class Main {
         //add somethingS
         //Hey, it's me
         //Hola papi
+        Menu test = new testClass();
+        test.testMethod();
     }
 }
