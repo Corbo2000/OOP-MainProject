@@ -7,7 +7,8 @@
       <change beforePath="$PROJECT_DIR$/OOP_MainProject/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OOP_MainProject/Main.java~HEAD" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OOP_MainProject/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/OOP_MainProject/CreateAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/OOP_MainProject/CreateAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/accounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/OOP_MainProject/CreateAccount.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/accounts.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +41,24 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="OOP_MainProject" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="MainProjectPackage" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainProjectPackage.Main" />
+      <module name="OOP_MainProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MainProjectPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOP_MainProject.Main" />
       <module name="OOP_MainProject" />
@@ -57,6 +74,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>

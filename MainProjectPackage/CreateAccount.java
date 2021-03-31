@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class CreateAccount {
     void accountCreate(){
         Scanner keyboardInput = new Scanner(System.in);
+        boolean continueLoop = true;
         String password, name, address, phone, CC, ID, accType, fileLine;
 
         //Create file if necessary
@@ -29,9 +30,11 @@ public class CreateAccount {
             try {
                 Scanner accountsReader = new Scanner(accountsFile);
                 while (accountsReader.hasNextLine()) {
+                    continueLoop = true;
                     fileLine = accountsReader.nextLine();
                     if (fileLine.equals(ID)) {
                         System.out.println("This ID is already registered. Please try again.");
+                        continueLoop = false;
                         break;
                     }
                 }
@@ -39,6 +42,9 @@ public class CreateAccount {
             } catch (FileNotFoundException e) {
                 System.out.println("An error occurred.");
                 e.printStackTrace();
+            }
+            if (!continueLoop){
+                continue;
             }
 
             System.out.println("Please enter your name:");
