@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class CreateAccount {
     void accountCreate(){
         Scanner keyboardInput = new Scanner(System.in);
-        boolean loopDone = true;
         String password, name, address, phone, CC, ID, accType, fileLine;
 
         //Create file if necessary
@@ -33,7 +32,6 @@ public class CreateAccount {
                     fileLine = accountsReader.nextLine();
                     if (fileLine.equals(ID)) {
                         System.out.println("This ID is already registered. Please try again.");
-                        loopDone = false;
                         break;
                     }
                 }
@@ -57,10 +55,6 @@ public class CreateAccount {
 
             //Write user information to file
            try {
-               /* FileWriter writer = new FileWriter("accounts.txt");
-                writer.write(ID + "\n" + name + "\n" + address + "\n" + phone + "\n" + CC + "\n" + accType + "\n\n");
-                writer.close();*/
-
                FileWriter writer = new FileWriter(accountsFile, true);
                BufferedWriter br = new BufferedWriter(writer);
                br.write(ID + "\n" + name + "\n" + address + "\n" + phone + "\n" + CC + "\n" + accType + "\n\n");
