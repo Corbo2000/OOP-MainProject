@@ -1,4 +1,4 @@
-package OOP_MainProject;
+package MainProjectPackage;
 
 import java.io.*;
 import java.util.Scanner;
