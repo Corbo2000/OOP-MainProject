@@ -1,10 +1,7 @@
 package OOP_MainProject;
 
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
+import java.io.*;
 import java.util.Scanner;
-import java.io.File;
-import java.io.IOException;
 
 public class CreateAccount {
     void accountCreate(){
@@ -13,11 +10,11 @@ public class CreateAccount {
         String password, name, address, phone, CC, ID, accType, fileLine;
 
         //Create file if necessary
+
         File accountsFile = new File("accounts.txt");
         try {
-            //WARNING: I'm not sure if this will create a new file every time. Check later
-            if (accountsFile.createNewFile()) {
-                System.out.println("File created: " + accountsFile.getName());
+            if (!accountsFile.exists()) {
+                accountsFile.createNewFile();
             }
         } catch (IOException e) {
             System.out.println("An error occurred.");
@@ -40,9 +37,6 @@ public class CreateAccount {
                         break;
                     }
                 }
-                if (loopDone == true){
-                    continue;
-                }
                 accountsReader.close();
             } catch (FileNotFoundException e) {
                 System.out.println("An error occurred.");
@@ -62,10 +56,19 @@ public class CreateAccount {
             //TODO: Charge $40 when premium selected
 
             //Write user information to file
-            try {
-                FileWriter writer = new FileWriter("accounts.txt");
+           try {
+               /* FileWriter writer = new FileWriter("accounts.txt");
                 writer.write(ID + "\n" + name + "\n" + address + "\n" + phone + "\n" + CC + "\n" + accType + "\n\n");
-                writer.close();
+                writer.close();*/
+
+               FileWriter writer = new FileWriter(accountsFile, true);
+               BufferedWriter br = new BufferedWriter(writer);
+               br.write(ID + "\n" + name + "\n" + address + "\n" + phone + "\n" + CC + "\n" + accType + "\n\n");
+
+               br.close();
+               writer.close();
+               System.out.println("Account successfully created!");
+
             } catch (IOException e) {
                 System.out.println("An error occurred.");
                 e.printStackTrace();
