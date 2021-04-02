@@ -63,7 +63,7 @@ public class CreateAccount {
            try {
                FileWriter writer = new FileWriter(accountsFile, true);
                BufferedWriter br = new BufferedWriter(writer);
-               br.write(ID + "\n" + name + "\n" + address + "\n" + phone + "\n" + CC + "\n" + accType + "\n\n");
+               br.write("--\n" + ID + "\n" + password + "\n" + name + "\n" + address + "\n" + phone + "\n" + CC + "\n" + accType + "\n");
 
                br.close();
                writer.close();
@@ -75,7 +75,5 @@ public class CreateAccount {
             }
             break;
         }
-
-
     }
 }
