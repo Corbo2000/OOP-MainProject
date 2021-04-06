@@ -10,7 +10,7 @@ public class Main {
         Scanner keyboardInput = new Scanner(System.in);
         CreateAccount acc = new CreateAccount();
         LogIn login = new LogIn();
-        System.out.println("Please select an option: \n1) Log in\n2)Create Account");
+        System.out.println("Please select an option: \n1) Log in\n2) Create Account");
         choice = keyboardInput.nextInt();
         switch(choice){
             case 1:

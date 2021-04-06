@@ -1,6 +1,7 @@
 package MainProjectPackage;
 
 public interface Menu {
+    abstract public void LogOut();
     abstract public void ViewOrder();
     abstract public void ViewInvoice();
     abstract public void SelectItems();
@@ -12,6 +13,11 @@ public interface Menu {
 }
 
 class Customer implements Menu{
+    @Override
+    public void LogOut() {
+
+    }
+
     @Override
     public void ViewOrder() {
 
@@ -55,6 +61,11 @@ class Customer implements Menu{
 
 class Supplier implements Menu{
     @Override
+    public void LogOut() {
+
+    }
+
+    @Override
     public void ViewOrder() {
         //does nothing
     }
@@ -96,6 +107,11 @@ class Supplier implements Menu{
 }
 
 class Bank implements Menu{
+    @Override
+    public void LogOut() {
+
+    }
+
     @Override
     public void ViewOrder() {
         //does nothing
