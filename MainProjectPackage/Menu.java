@@ -6,7 +6,6 @@ public interface Menu {
     abstract public void ViewInvoice();
     abstract public void SelectItems();
     abstract public void MakeOrder();
-    abstract public void CreateAccount();
     abstract public void ProcessOrder();
     abstract public void ShipOrder();
     abstract public void ViewStock();
@@ -15,7 +14,7 @@ public interface Menu {
 class Customer implements Menu{
     @Override
     public void LogOut() {
-
+        System.exit(0);
     }
 
     @Override
@@ -35,11 +34,6 @@ class Customer implements Menu{
 
     @Override
     public void MakeOrder() {
-
-    }
-
-    @Override
-    public void CreateAccount() {
 
     }
 
@@ -62,7 +56,7 @@ class Customer implements Menu{
 class Supplier implements Menu{
     @Override
     public void LogOut() {
-
+        System.exit(0);
     }
 
     @Override
@@ -83,11 +77,6 @@ class Supplier implements Menu{
     @Override
     public void MakeOrder() {
         //does nothing
-    }
-
-    @Override
-    public void CreateAccount() {
-
     }
 
     @Override
@@ -130,11 +119,6 @@ class Bank implements Menu{
     @Override
     public void MakeOrder() {
 
-    }
-
-    @Override
-    public void CreateAccount() {
-        //does nothing
     }
 
     @Override

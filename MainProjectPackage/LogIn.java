@@ -5,9 +5,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class LogIn {
-    String log(){
+    String ID, password, Name, Address, Phone, CCNumber, Type;
+    void log(){
         File accountsFile = new File("accounts.txt");
-        String ID, password, fileLine, userInfo = "";
+        String fileLine, userInfo = "";
         Scanner keyboardInput = new Scanner(System.in);
         System.out.println("Please enter your user ID:");
         ID = keyboardInput.nextLine();
@@ -23,9 +24,12 @@ public class LogIn {
                     if (accountsReader.nextLine().equals(ID)) {
                         userInfo = userInfo + ID;
                         if (accountsReader.nextLine().equals(password)){
-                            userInfo = userInfo + " " + password;
-                            userInfo = userInfo + " " + accountsReader.nextLine() + " " + accountsReader.nextLine() + " " + accountsReader.nextLine() + " " + accountsReader.nextLine() + " " + accountsReader.nextLine();
-                            return userInfo;
+                            Name = accountsReader.nextLine();
+                            Address = accountsReader.nextLine();
+                            Phone = accountsReader.nextLine();
+                            CCNumber = accountsReader.nextLine();
+                            Type = accountsReader.nextLine();
+                            main2();
                         }
                     }
                 }
@@ -35,6 +39,10 @@ public class LogIn {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-        return "User not found";
+    }
+
+    void main2(){
+        // Displays welcome message and our menu which will interact with the Menu Interface and all of the subsequent
+        // classes
     }
 }
