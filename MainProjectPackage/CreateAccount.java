@@ -55,7 +55,7 @@ public class CreateAccount {
             phone = keyboardInput.nextLine();
             System.out.println("Please enter your credit card number:");
             CC = keyboardInput.nextLine();
-            System.out.println("Please select a premium ($40) or a regular membership by entering (premium/regular)");
+            System.out.println("Please select a premium ($40) or a regular membership or verify that you are a supplier by entering (premium/regular/supplier)");
             accType = keyboardInput.nextLine();
             //TODO: Charge $40 when premium selected
 
