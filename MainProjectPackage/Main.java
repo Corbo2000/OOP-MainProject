@@ -15,8 +15,7 @@ public class Main {
         switch(choice){
             case 1:
                 System.out.println("You will log in here...");
-                userInfo = login.log();
-                System.out.println(userInfo);
+                login.log();
                 break;
             case 2:
                 System.out.println("Directing you to account creation...");
