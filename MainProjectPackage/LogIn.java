@@ -23,7 +23,7 @@ public class LogIn {
                 if (fileLine.equals("--")){
                     if (accountsReader.nextLine().equals(ID)) {
                         userInfo = userInfo + ID;
-                        if (accountsReader.nextLine().equals(password)){
+                        if (accountsReader.nextLine().equals(password)) {
                             Name = accountsReader.nextLine();
                             Address = accountsReader.nextLine();
                             Phone = accountsReader.nextLine();
