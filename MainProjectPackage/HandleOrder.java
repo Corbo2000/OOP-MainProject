@@ -1,13 +1,12 @@
 package MainProjectPackage;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class HandleOrder {
-    public void SelectItems(String userType){
+    public void SelectItems(String userType, String CC){
         Scanner keyboard = new Scanner(System.in);
         File items = new File("ItemCatalog.txt");
         List<String> itemList = new ArrayList<String>();
@@ -56,7 +55,7 @@ public class HandleOrder {
                     counter2++;
                 }
                 System.out.println("The total comes out to " + totalPrice);
-                //TODO: Go to order processing
+                MakeOrder(itemList, itemQuantity, totalPrice, CC);
                 break;
             }
             counter1++;
@@ -68,6 +67,66 @@ public class HandleOrder {
                 itemQuantity.set(choice - 1, itemQuantity.get(choice - 1) + 1);
                 totalPrice += Float.parseFloat(itemInfo[3]);
             }
+        }
+    }
+
+    public void MakeOrder(List<String> itemList, List<Integer> itemQuantity, float price, String CC){
+        File ccFile = new File("BankCCInfo.txt");
+        File accounts = new File("accounts.txt");
+        boolean cardFound = false;
+        int choice;
+        String verifiedCC, newCC;
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Please select 1) mail delivery ($3 shipping fee) or 2) in-store pickup");
+        choice = keyboard.nextInt();
+        keyboard.nextLine();
+        if (choice == 1){price += 3;}
+
+        try {
+            Scanner CCReader = new Scanner(ccFile);
+            while (CCReader.hasNextLine()) {
+                verifiedCC = CCReader.nextLine();
+                if (verifiedCC.equals(CC)){
+                    //TODO: Bank verifies order
+                    //TODO: Charge premium users for first purchase
+                    cardFound = true;
+                    break;
+                }
+            }
+            if (!cardFound){
+                System.out.println("Your card information was not found on our records. Please enter a valid CC number:");
+                newCC = keyboard.nextLine();
+                try {
+                    Scanner fileReader = new Scanner(accounts);
+                    StringBuffer buffer = new StringBuffer();
+                    while (fileReader.hasNextLine()) {
+                        buffer.append(fileReader.nextLine()+System.lineSeparator());
+                    }
+                    String fileContents = buffer.toString();
+                    fileReader.close();
+                    String oldLine = CC;
+                    String newLine = newCC;
+                    fileContents = fileContents.replaceAll(oldLine, newLine);
+                    FileWriter writer = new FileWriter(accounts);
+                    writer.append(fileContents);
+                    writer.flush();
+                } catch (IOException e) {
+                    System.out.println("An error occurred.");
+                    e.printStackTrace();
+                }
+
+
+
+
+
+
+
+
+            }
+            CCReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
         }
     }
 }
