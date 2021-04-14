@@ -1,0 +1,13 @@
+This is a quick rundown of how to get javaFX working on intelliJ.
+
+1) I have provided a Google Drive link to the library
+2) Extract it somewhere you will remember (you will need to know it later)
+3) You may create a new project as normal in IntelliJ, or use a current one.
+4) to add the library, with the project open, File->Project Strucutre -> Libraries, click the "+", 
+click "java". find where you stored the downloaded library, and use the "lib" folder. 
+5) Now do Run -> Edit Configurations -> modify options, click "add VM options".
+6) In the top right of this window, just under the "modify options" tab, there should be a 
+text field, copy this line into it changing the <file-path/to/lib/folder> line to where
+your javaFX "lib" folder is installed. 
+
+--module-path C:\Users\wheel\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml 

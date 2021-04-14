@@ -47,6 +47,6 @@ public class LogIn {
 
         //Temporarily accesses method without user input. Fix later
         HandleOrder order = new HandleOrder();
-        order.SelectItems("regular", CCNumber);
+        order.SelectItems("regular", CCNumber, ID);
     }
 }

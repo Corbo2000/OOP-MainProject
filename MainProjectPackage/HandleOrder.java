@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class HandleOrder {
-    public void SelectItems(String userType, String CC){
+    public void SelectItems(String userType, String CC, String ID){
         Scanner keyboard = new Scanner(System.in);
         File items = new File("ItemCatalog.txt");
         List<String> itemList = new ArrayList<String>();
@@ -55,7 +55,7 @@ public class HandleOrder {
                     counter2++;
                 }
                 System.out.println("The total comes out to " + totalPrice);
-                MakeOrder(itemList, itemQuantity, totalPrice, CC);
+                MakeOrder(itemList, itemQuantity, totalPrice, CC, ID);
                 break;
             }
             counter1++;
@@ -70,63 +70,88 @@ public class HandleOrder {
         }
     }
 
-    public void MakeOrder(List<String> itemList, List<Integer> itemQuantity, float price, String CC){
+    public void MakeOrder(List<String> itemList, List<Integer> itemQuantity, float price, String CC, String ID){
         File ccFile = new File("BankCCInfo.txt");
         File accounts = new File("accounts.txt");
+        Buffer buff = new Buffer();
+        BankHandler bank = new BankHandler(buff, CC);
         boolean cardFound = false;
         int choice;
+        long authorization;
         String verifiedCC, newCC;
+        String[] itemInfo = {"", "", "", ""};
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Please select 1) mail delivery ($3 shipping fee) or 2) in-store pickup");
         choice = keyboard.nextInt();
         keyboard.nextLine();
         if (choice == 1){price += 3;}
+        //Get authorization number if valid, 0 if invalid
+        bank.run();
+        authorization = bank.authorization;
+        if (authorization == 0){
+            System.out.println("Credit card not found in our system. Please enter 0 to exit or enter a new credit card");
+            newCC = keyboard.nextLine();
+            if (newCC.equals("0")){
+                System.out.println("Exiting...");
+                System.exit(0);
+            }
+            bank.CC = newCC;
+            bank.run();
 
+            if (bank.authorization == 0){
+                System.out.println("You entered an invalid card. Now exiting...");
+                System.exit(0);
+            }
+
+            try {
+                Scanner fileReader = new Scanner(accounts);
+                StringBuffer buffer = new StringBuffer();
+                while (fileReader.hasNextLine()) {
+                    buffer.append(fileReader.nextLine()+System.lineSeparator());
+                }
+                String fileContents = buffer.toString();
+                fileReader.close();
+                fileContents = fileContents.replaceAll(CC, newCC);
+                FileWriter writer = new FileWriter(accounts);
+                writer.append(fileContents);
+                writer.flush();
+            } catch (IOException e) {
+                System.out.println("An error occurred.");
+                e.printStackTrace();
+            }
+        }else{
+            System.out.println("Your authorization number is " + authorization);
+        }
+        //Store the order
+        File orderLog = new File("orders.txt");
         try {
-            Scanner CCReader = new Scanner(ccFile);
-            while (CCReader.hasNextLine()) {
-                verifiedCC = CCReader.nextLine();
-                if (verifiedCC.equals(CC)){
-                    //TODO: Bank verifies order
-                    //TODO: Charge premium users for first purchase
-                    cardFound = true;
-                    break;
-                }
+            if (!orderLog.exists()) {
+                orderLog.createNewFile();
             }
-            if (!cardFound){
-                System.out.println("Your card information was not found on our records. Please enter a valid CC number:");
-                newCC = keyboard.nextLine();
-                try {
-                    Scanner fileReader = new Scanner(accounts);
-                    StringBuffer buffer = new StringBuffer();
-                    while (fileReader.hasNextLine()) {
-                        buffer.append(fileReader.nextLine()+System.lineSeparator());
-                    }
-                    String fileContents = buffer.toString();
-                    fileReader.close();
-                    String oldLine = CC;
-                    String newLine = newCC;
-                    fileContents = fileContents.replaceAll(oldLine, newLine);
-                    FileWriter writer = new FileWriter(accounts);
-                    writer.append(fileContents);
-                    writer.flush();
-                } catch (IOException e) {
-                    System.out.println("An error occurred.");
-                    e.printStackTrace();
-                }
-
-
-
-
-
-
-
-
-            }
-            CCReader.close();
-        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+        try {
+            FileWriter writer = new FileWriter(orderLog, true);
+            BufferedWriter br = new BufferedWriter(writer);
+            br.write("\n" + ID + " ");
+            for (int i = 0; i < itemList.size(); i++){
+                if (itemQuantity.get(i) > 0){
+                    itemInfo = itemList.get(i).split(",", 4);
+                    br.write(itemInfo[0] + " ");
+                }
+            }
+            br.write(authorization + " ordered");
+            br.close();
+            writer.close();
+            System.out.println("Order successfully placed!");
+
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
+
     }
 }
