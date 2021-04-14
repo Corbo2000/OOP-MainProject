@@ -47,6 +47,24 @@ public class LogIn {
 
         //Temporarily accesses method without user input. Fix later
         HandleOrder order = new HandleOrder();
-        order.SelectItems("regular", CCNumber, ID);
+        Scanner keyboard = new Scanner(System.in);
+        int choice;
+        while(true){
+            System.out.println("1) Make order\n2) View Order\n3) View Invoice 4) Exit");
+            choice = keyboard.nextInt();
+            switch (choice){
+                case 1:
+                    order.SelectItems("regular", CCNumber, ID);
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
