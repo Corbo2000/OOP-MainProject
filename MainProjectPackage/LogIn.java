@@ -6,14 +6,19 @@ import java.util.Scanner;
 
 public class LogIn {
     String ID, password, Name, Address, Phone, CCNumber, Type;
-    void log(){
+    boolean log(String user, String pass){
+        boolean ReturnBoolean = false;
         File accountsFile = new File("accounts.txt");
         String fileLine, userInfo = "";
         Scanner keyboardInput = new Scanner(System.in);
+        /* Old input method
         System.out.println("Please enter your user ID:");
         ID = keyboardInput.nextLine();
         System.out.println("Please enter your password:");
         password = keyboardInput.nextLine();
+         */
+        password = pass;
+        ID = user;
 
         //Verify valid info
         try {
@@ -29,7 +34,8 @@ public class LogIn {
                             Phone = accountsReader.nextLine();
                             CCNumber = accountsReader.nextLine();
                             Type = accountsReader.nextLine();
-                            main2();
+                            ReturnBoolean = true;
+                            //main2();
                         }
                     }
                 }
@@ -39,6 +45,7 @@ public class LogIn {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+        return ReturnBoolean;
     }
 
     void main2(){
