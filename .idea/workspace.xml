@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="">
+    <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="FX Scene Builder aid for GUI design with three scenes included">
       <change afterPath="$PROJECT_DIR$/CreateAccount.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/LogIn.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Welcome.fxml" afterDir="false" />
@@ -135,6 +135,14 @@
       <option name="presentableId" value="Default" />
       <updated>1616867400768</updated>
     </task>
+    <task id="LOCAL-00001" summary="FX Scene Builder aid for GUI design with three scenes included">
+      <created>1618817380386</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1618817380386</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +156,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FX Scene Builder aid for GUI design with three scenes included" />
+    <option name="LAST_COMMIT_MESSAGE" value="FX Scene Builder aid for GUI design with three scenes included" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
