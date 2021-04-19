@@ -13,6 +13,19 @@ import javafx.scene.control.TextField;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 
+public class Main{
+    public static void main(String[] args){
+        //HandleOrder hand = new HandleOrder();
+        //hand.SelectItems("regular", "1111-2222-3333-4444", "123456");
+        //hand.SelectItems("regular", "1111-2222-3333-4444", "123456");
+        //hand.SelectItems("regular", "1111-2222-3333-4444", "123456");
+        //hand.SelectItems("regular", "1111-2222-3333-4444", "123456");
+        SupplierClient sup = new SupplierClient();
+        sup.ProcessOrder();
+    }
+}
+
+/*Start temp block
 public class Main extends Application{
 
     private Label selectionLabel;
@@ -70,12 +83,14 @@ public class Main extends Application{
     class LoginHandler implements EventHandler<ActionEvent> {
             @Override
             public void handle(ActionEvent actionEvent) {
+                End temp block*/
                 /*
                 LogIn login = new LogIn();
 
                 login.log();
                 */
                 //Label Creation
+                /*Start temp block
                 Label UsernamePrompt = new Label("Enter your username: ");
                 Label PasswordPrompt = new Label("Enter your password: ");
                 tryagain = new Label();
@@ -114,7 +129,7 @@ public class Main extends Application{
 
                 acc.accountCreate();
                 */
-
+/*Start temp block
                 //Heres a big one
                 Label IDPrompt = new Label("Enter a User ID: ");
                 Label PassPrompt = new Label("Enter a Password: ");
@@ -264,3 +279,5 @@ public class Main extends Application{
             }
         }
     }
+
+    End temp block*/

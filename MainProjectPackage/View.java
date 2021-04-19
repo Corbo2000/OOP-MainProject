@@ -36,7 +36,7 @@ public class View {
         for (int j = 0; j< allUserOrders.size();j++){
             orderInfo = allUserOrders.get(j).split(";");
             if (orderInfo[2].equals(orderID)){
-                System.out.println("Order of ID " + orderInfo[2] + " consists of" + orderInfo[1]);
+                System.out.println("Order of ID " + orderInfo[2] + " consists of " + orderInfo[1]);
                 System.out.println("Status: " + orderInfo[3]);
                 return;
             }
@@ -73,7 +73,7 @@ public class View {
         for (int j = 0; j< allUserOrders.size();j++){
             orderInfo = allUserOrders.get(j).split(";");
             if (orderInfo[2].equals(orderID)){
-                System.out.println("Order of ID " + orderInfo[2] + " placed on " + orderInfo[4] + " consists of" + orderInfo[1]);
+                System.out.println("Order of ID " + orderInfo[2] + " placed on " + orderInfo[4] + " consists of " + orderInfo[1]);
                 System.out.println("The price was " + orderInfo[5] + "Paid with card " + CC);
                 return;
             }
