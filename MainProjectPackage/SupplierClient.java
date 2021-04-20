@@ -57,7 +57,6 @@ public class SupplierClient {
                     System.out.println("This order has already been processed");
                     return;
                 }
-                boolean orderSuccess = true;
                 itemInfo = orderInfo[1].split(" ");
                 for (int k = 0; k < itemStocks.size();k++){
                     stockInfo = itemStocks.get(k).split(",",3);
@@ -224,6 +223,21 @@ public class SupplierClient {
                 }
 
             }
+        }
+    }
+    public void ViewStock(){
+        String[] stockList = {"", "", ""};
+        try {
+            File stockFile = new File("stocks.txt");
+            Scanner accountsReader = new Scanner(stockFile);
+            while (accountsReader.hasNextLine()) {
+                stockList = accountsReader.nextLine().split(",");
+                System.out.println(stockList[0] + ": " + stockList[1] + " available. " + stockList[2] + " reserved.");
+            }
+            accountsReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
         }
     }
 }
