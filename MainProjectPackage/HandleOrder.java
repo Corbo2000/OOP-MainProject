@@ -135,14 +135,16 @@ public class HandleOrder {
         try {
             FileWriter writer = new FileWriter(orderLog, true);
             BufferedWriter br = new BufferedWriter(writer);
-            br.write("\n" + ID + " ");
+            br.write(ID + ";");
             for (int i = 0; i < itemList.size(); i++){
                 if (itemQuantity.get(i) > 0){
                     itemInfo = itemList.get(i).split(",", 4);
-                    br.write(itemInfo[0] + " ");
+                    br.write(itemQuantity.get(i) + " " + itemInfo[0] + "(s) ");
                 }
             }
-            br.write(authorization + " ordered");
+            br.write(";" + authorization + ";ordered;");
+            br.write(String.valueOf(java.time.LocalDate.now()));
+            br.write(";" + price + "\n");
             br.close();
             writer.close();
             System.out.println("Order successfully placed!");
