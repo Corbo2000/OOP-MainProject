@@ -21,7 +21,7 @@ public class Main{
         //hand.SelectItems("regular", "1111-2222-3333-4444", "123456");
         //hand.SelectItems("regular", "1111-2222-3333-4444", "123456");
         SupplierClient sup = new SupplierClient();
-        sup.ProcessOrder();
+        sup.ShipOrder();
     }
 }
 

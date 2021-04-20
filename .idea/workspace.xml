@@ -2,31 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MainProjectPackage/SupplierClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stocks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaFX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFX.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/HandleOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/HandleOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainProjectPackage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_MainProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_MainProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/accounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainProjectPackage/SupplierClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/SupplierClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/orders.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/libraries/lib1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/libraries/lib1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/JavaFX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/JavaFX.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/HandleOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/HandleOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$CNACall.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$LoginCall.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$LoginHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$cnaHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$exitHandler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/OOP_MainProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/OOP_MainProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/accounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/SupplierClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/SupplierClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/orders.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stocks.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
