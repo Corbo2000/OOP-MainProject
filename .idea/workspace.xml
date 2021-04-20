@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="FX Scene Builder aid for GUI design with three scenes included">
-      <change afterPath="$PROJECT_DIR$/CreateAccount.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LogIn.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Welcome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/loginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/welcomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CreateAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/CreateAccount.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LogIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/LogIn.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainProjectPackage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Welcome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$CNACall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$LoginCall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$LoginHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$cnaHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$exitHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,6 +57,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.ChangelistConflict" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lolua\IdeaProjects\OOP_MainProject\resources" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="OOP_MainProject" />
     </key>
@@ -142,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618817380386</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FX Scene Builder aid for GUI design with three scenes included">
+      <created>1618817547459</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618817547459</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
