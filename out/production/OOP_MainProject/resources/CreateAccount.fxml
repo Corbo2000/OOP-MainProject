@@ -2,8 +2,9 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<TitledPane collapsible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="TopShop" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+<TitledPane collapsible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="826.0" text="TopShop" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.createController">
     <content>
         <AnchorPane minWidth="600.0" prefHeight="400.0">
             <children>
@@ -17,7 +18,7 @@
                     </rowConstraints>
                     <children>
                         <Label text="Enter a User ID:" />
-                        <TextField prefHeight="26.0" prefWidth="140.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="userID" prefHeight="26.0" prefWidth="140.0" GridPane.columnIndex="1" />
                     </children>
                 </GridPane>
                 <GridPane layoutX="33.0" layoutY="46.0" prefHeight="37.0" prefWidth="312.0">
@@ -30,7 +31,7 @@
                     </rowConstraints>
                     <children>
                         <Label text="Enter a Password:" />
-                        <TextField prefHeight="26.0" prefWidth="223.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="passwordField" prefHeight="26.0" prefWidth="223.0" GridPane.columnIndex="1" />
                     </children>
                 </GridPane>
                 <GridPane layoutX="33.0" layoutY="93.0" prefHeight="22.0" prefWidth="469.0">
@@ -43,7 +44,7 @@
                     </rowConstraints>
                     <children>
                         <Label text="Enter your name:" />
-                        <TextField GridPane.columnIndex="1" />
+                        <TextField fx:id="nameField" GridPane.columnIndex="1" />
                     </children>
                 </GridPane>
                 <GridPane layoutX="32.0" layoutY="129.0" prefHeight="43.0" prefWidth="443.0">
@@ -56,7 +57,7 @@
                     </rowConstraints>
                     <children>
                         <Label prefHeight="31.0" prefWidth="101.0" text="Enter your address:" />
-                        <TextArea prefHeight="43.0" prefWidth="279.0" GridPane.columnIndex="1" />
+                        <TextArea fx:id="addressField" prefHeight="43.0" prefWidth="279.0" GridPane.columnIndex="1" />
                     </children>
                 </GridPane>
                 <GridPane layoutX="32.0" layoutY="187.0" prefHeight="34.0" prefWidth="423.0">
@@ -69,7 +70,7 @@
                     </rowConstraints>
                     <children>
                         <Label text="Enter your phone number (000-000-0000):" />
-                        <TextField prefHeight="26.0" prefWidth="128.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="phoneField" prefHeight="26.0" prefWidth="128.0" GridPane.columnIndex="1" />
                     </children>
                 </GridPane>
                 <GridPane layoutX="32.0" layoutY="228.0" prefHeight="38.0" prefWidth="519.0">
@@ -82,7 +83,7 @@
                     </rowConstraints>
                     <children>
                         <Label text="Enter your credit card number (000-000-0000):" />
-                        <TextField GridPane.columnIndex="1" />
+                        <TextField fx:id="creditField" GridPane.columnIndex="1" />
                     </children>
                 </GridPane>
                 <GridPane layoutX="33.0" layoutY="266.0" prefHeight="41.0" prefWidth="345.0">
@@ -94,10 +95,18 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <TextField GridPane.columnIndex="1" />
+                        <TextField fx:id="accountType" GridPane.columnIndex="1" />
                         <Label text="Select the kind of account it is: " />
                     </children>
                 </GridPane>
+                <Button layoutX="13.0" layoutY="530.0" mnemonicParsing="false" text="Back" />
+                <Button layoutX="776.0" layoutY="530.0" mnemonicParsing="false" text="Exit" />
+                <Button fx:id="createButton" layoutX="296.0" layoutY="405.0" mnemonicParsing="false" onAction="#createbutton" text="Create Account">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="18.0" />
+               </font></Button>
+                <Label fx:id="emptyfieldWarning" layoutX="364.0" layoutY="329.0" />
+                <Label fx:id="duplicateIDWarning" layoutX="364.0" layoutY="375.0" />
             </children>
         </AnchorPane>
     </content>
