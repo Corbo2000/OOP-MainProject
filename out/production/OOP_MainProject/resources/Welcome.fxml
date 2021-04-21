@@ -1,26 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<TitledPane animated="false" collapsible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="826.0" style="-fx-background-color: #6A8A82;" text="TopShop" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.welcomeController">
-    <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #5CDB95;">
-            <children>
-                <Button fx:id="login" layoutX="108.0" layoutY="365.0" mnemonicParsing="false" onAction="#logIn" prefHeight="64.0" prefWidth="124.0" style="-fx-background-color: #05386B;" text="Log In" textFill="#edf5e1" AnchorPane.leftAnchor="108.0">
-                    <font>
-                        <Font name="Lucida Fax Regular" size="18.0" />
-                    </font></Button>
-                <Button fx:id="accountCreate" layoutX="529.0" layoutY="361.0" mnemonicParsing="false" onAction="#accCreate" prefHeight="72.0" prefWidth="197.0" style="-fx-background-color: #05386B;" text="Create Account" textFill="#edf5e1" AnchorPane.rightAnchor="98.62266409613653">
-                    <font>
-                        <Font name="Lucida Fax Regular" size="18.0" />
-                    </font></Button>
-                <Label layoutX="179.0" layoutY="100.0" prefHeight="153.0" prefWidth="452.0" text="Welcome to TopShop!" textFill="#EDF5E1" AnchorPane.leftAnchor="179.0" AnchorPane.rightAnchor="23.399999999999864">
-                    <font>
-                        <Font name="Lucida Fax Demibold" size="36.0" />
-                    </font>
-                </Label>
-            </children></AnchorPane>
-    </content>
-</TitledPane>
+
+  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="583.0" prefWidth="891.0" style="-fx-background-color: #FFFF;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.welcomeController">
+      <children>
+          <Button fx:id="login" layoutX="108.0" layoutY="365.0" mnemonicParsing="false" onAction="#logIn" prefHeight="64.0" prefWidth="124.0" style="-fx-background-color: #05386B;" text="Log In" textFill="#edf5e1" AnchorPane.leftAnchor="108.0">
+              <font>
+                  <Font name="Lucida Fax Regular" size="18.0" />
+              </font>
+      </Button>
+          <Button fx:id="accountCreate" layoutX="529.0" layoutY="361.0" mnemonicParsing="false" onAction="#accCreate" prefHeight="72.0" prefWidth="197.0" style="-fx-background-color: #05386B;" text="Create Account" textFill="#edf5e1" AnchorPane.rightAnchor="98.62266409613653">
+              <font>
+                  <Font name="Lucida Fax Regular" size="18.0" />
+              </font>
+      </Button>
+          <Label layoutX="204.0" layoutY="142.0" prefHeight="153.0" prefWidth="452.0" text="Welcome to TopShop!" textFill="#5cdb95" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="35.99999999999977">
+              <font>
+                  <Font name="Lucida Fax Demibold" size="36.0" />
+              </font>
+          </Label>
+      <ImageView fitHeight="235.0" fitWidth="235.0" layoutX="538.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Jpegs/download.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="190.0" layoutX="14.0" layoutY="165.0" opacity="0.14">
+         <image>
+            <Image url="@../Jpegs/download1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="247.0" fitWidth="244.0" layoutX="291.0" layoutY="18.0" opacity="0.08">
+         <image>
+            <Image url="@../Jpegs/download2.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="317.0" layoutY="353.0" opacity="0.06">
+         <image>
+            <Image url="@../Jpegs/images.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="200.0" layoutX="9.0" layoutY="448.0" opacity="0.09">
+         <image>
+            <Image url="@../Jpegs/images1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="117.0" fitWidth="104.0" layoutX="716.0" layoutY="442.0" opacity="0.09">
+         <image>
+            <Image url="@../Jpegs/images2.png" />
+         </image>
+      </ImageView>
+      </children>
+</AnchorPane>

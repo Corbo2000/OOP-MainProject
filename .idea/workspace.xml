@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/createController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase/CreateAccountCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usecase/LogInCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib1.xml" beforeDir="false" />
+    <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="GUI now taking shape with packages added for structure">
+      <change afterPath="$PROJECT_DIR$/Controllers/vieworderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jpegs/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jpegs/download1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jpegs/download2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jpegs/images.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jpegs/images1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Jpegs/images2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/ViewOrder.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/createController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/createController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/welcomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/welcomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainProjectPackage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_MainProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_MainProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainProjectPackage/Menu.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/accounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Bank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Supplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/OOP_MainProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/OOP_MainProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/accounts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/CreateAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/CreateAccount.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/LogIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/LogIn.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/Welcome.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/CreateAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/CreateAccount.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/LogIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/LogIn.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Welcome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/CreateAccountCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/CreateAccountCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +57,15 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1qLmm87zKmYJxKW1x1wWB1doulr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -149,6 +164,14 @@
       <option name="presentableId" value="Default" />
       <updated>1616867400768</updated>
     </task>
+    <task id="LOCAL-00001" summary="GUI now taking shape with packages added for structure">
+      <created>1618969189781</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1618969189781</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +185,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="GUI now taking shape with packages added for structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI now taking shape with packages added for structure" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

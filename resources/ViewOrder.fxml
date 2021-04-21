@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="891.0" style="-fx-background-color: #5CDB95;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.vieworderController">
+   <children>
+      <Button layoutX="816.0" layoutY="14.0" mnemonicParsing="false" text="VIew Cart" />
+      <Button fx:id="exitButton" layoutX="824.0" layoutY="543.0" mnemonicParsing="false" onAction="#exitbutton" text="Exit" />
+      <Button fx:id="breadButton" graphicTextGap="2.0" layoutX="126.0" layoutY="148.0" mnemonicParsing="false" onAction="#breadbutton" style="-fx-background-color: #FFFF;" text="Bread">
+         <effect>
+            <Blend />
+         </effect></Button>
+      <Button layoutX="314.0" layoutY="148.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="514.0" layoutY="148.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="709.0" layoutY="148.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="126.0" layoutY="308.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="314.0" layoutY="308.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="514.0" layoutY="308.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="709.0" layoutY="308.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="126.0" layoutY="484.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="314.0" layoutY="484.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="514.0" layoutY="484.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="709.0" layoutY="484.0" mnemonicParsing="false" text="Button" />
+      <Label layoutX="76.0" layoutY="123.0" prefHeight="18.0" prefWidth="192.0" text="Freshly Baked Loaf of bread." />
+      <Label layoutX="720.0" layoutY="457.0" text="Label" />
+      <Label layoutX="525.0" layoutY="457.0" text="Label" />
+      <Label layoutX="325.0" layoutY="457.0" text="Label" />
+      <Label layoutX="137.0" layoutY="457.0" text="Label" />
+      <Label layoutX="720.0" layoutY="282.0" text="Label" />
+      <Label layoutX="525.0" layoutY="282.0" text="Label" />
+      <Label layoutX="720.0" layoutY="124.0" text="Label" />
+      <Label layoutX="525.0" layoutY="124.0" text="Label" />
+      <Label layoutX="325.0" layoutY="123.0" text="Label" />
+      <Label layoutX="325.0" layoutY="282.0" text="Label" />
+      <Label layoutX="138.0" layoutY="282.0" text="Label" />
+      <Button fx:id="logoutButton" layoutX="28.0" layoutY="543.0" mnemonicParsing="false" onAction="#logoutbutton" text="Log Out" />
+   </children>
+</AnchorPane>

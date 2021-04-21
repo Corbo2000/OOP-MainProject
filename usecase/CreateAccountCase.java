@@ -55,7 +55,7 @@ public class CreateAccountCase {
             try {
                 FileWriter writer = new FileWriter(accountsFile, true);
                 BufferedWriter br = new BufferedWriter(writer);
-                br.write("\n--\n" + userID + "\n" + pass + "\n" + Name + "\n" + adress + "\n" + telephone + "\n" + creditCard + "\n" + accountType + "\n");
+                br.write("\n--\n" + userID + "\n" + pass + "\n" + Name + "\n" + adress + "\n" + telephone + "\n" + creditCard + "\n" + accountType );
                 duplicate = "!duplicate";
                 br.close();
                 writer.close();

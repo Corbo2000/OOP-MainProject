@@ -12,7 +12,10 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import usecase.CreateAccountCase;
 
+import java.io.IOException;
+
 public class createController {
+    public Button createButton;
     @FXML
     Button backButton,exitButton;
     @FXML
@@ -31,7 +34,7 @@ public class createController {
         Stage backStage = (Stage) backButton.getScene().getWindow();
         backStage.setScene(new Scene(root));
     }
-    public void exitbutton() throws Exception{
+    public void exitbutton(){
         System.exit(0);
     }
 
@@ -41,7 +44,7 @@ public class createController {
         phone = phoneField.getText(); CC = creditField.getText(); accType = accountType.getText();
         address = addressField.getText();
         if(password == vide||name==vide||address == vide||phone == vide||CC == vide||ID == vide|| accType == vide){
-            emptyfieldWarning.setText("Fill out all fields to creatw account");
+            emptyfieldWarning.setText("Fill out all fields to create account");
         }
         else{
             duplicateCheck =createaccount.accountCreate(password, name, address,phone, CC,  ID, accType);
@@ -51,6 +54,15 @@ public class createController {
             }
             else {
                 duplicateIDWarning.setText("Account Successfully Created");
+                Parent root = null;
+                try {
+                    root = FXMLLoader.load(getClass().getResource("../resources/ViewOrder.fxml"));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Stage createStage = (Stage) createButton.getScene().getWindow();
+                
+                createStage.setScene(new Scene(root));
             }
         }
 

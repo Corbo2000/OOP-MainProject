@@ -11,11 +11,15 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import usecase.LogInCase;
 
+import java.io.IOException;
+
 public class loginController {
     public TextField userField;
     public TextField passwordField;
     public Label userLabel;
     public Label passLabel;
+    public Label wrongLogIn;
+    public Button loginButton;
     @FXML
     Button backButton,exitButton;
     public String vide = "";
@@ -45,9 +49,17 @@ public class loginController {
             boolean userCheck = newlog.log(username,password);
             if(userCheck == true){
                 System.out.println("This is the username: "+username+" and this is the password: "+password);
+                Parent root = null;
+                try {
+                    root = FXMLLoader.load(getClass().getResource("../resources/ViewOrder.fxml"));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Stage loginStage = (Stage) loginButton.getScene().getWindow();
+                loginStage.setScene(new Scene(root));
             }
             else
-                System.out.println("Wrong password");
+                wrongLogIn.setText("Wrong log-in credentials please try again");
         }
 
     }
