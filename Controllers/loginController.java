@@ -51,7 +51,7 @@ public class loginController {
                 System.out.println("This is the username: "+username+" and this is the password: "+password);
                 Parent root = null;
                 try {
-                    root = FXMLLoader.load(getClass().getResource("../resources/ViewOrder.fxml"));
+                    root = FXMLLoader.load(getClass().getResource("../resources/CustomerMenu.fxml"));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
