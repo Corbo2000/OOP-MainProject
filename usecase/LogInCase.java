@@ -1,7 +1,8 @@
 package usecase;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import javafx.beans.property.SimpleStringProperty;
+
+import java.io.*;
 import java.util.Scanner;
 
 public class LogInCase {
@@ -9,6 +10,7 @@ public class LogInCase {
     public boolean log(String user, String pass){
         boolean ReturnBoolean = false;
         File accountsFile = new File("accounts.txt");
+        File cUserFile = new File("currentUser.txt");
         String fileLine, userInfo = "";
 
         /* Old input method
@@ -30,6 +32,16 @@ public class LogInCase {
                     if (accountsReader.nextLine().equals(ID)) {
                         userInfo = userInfo + ID;
                         if (accountsReader.nextLine().equals(password)) {
+
+                            try {
+                                FileWriter writer = new FileWriter(cUserFile, false);
+                                BufferedWriter br = new BufferedWriter(writer);
+                                br.write(ID + "\n" + password + "\n" + Name + "\n" + adress + "\n" + telephone + "\n" + creditCard + "\n" + accountType );
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+
+
                             Name = accountsReader.nextLine();
                             Address = accountsReader.nextLine();
                             Phone = accountsReader.nextLine();
@@ -46,6 +58,11 @@ public class LogInCase {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+
+        /*public void setUserName(String user) {
+            this.ID = new String(user);
+        }*/
+
         return ReturnBoolean;
     }
 }
