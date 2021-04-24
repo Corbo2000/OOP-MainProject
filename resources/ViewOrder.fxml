@@ -4,7 +4,7 @@
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="891.0" style="-fx-background-color: #5CDB95;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.vieworderController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="891.0" style="-fx-background-color: #5CDB95;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.vieworderController">
    <children>
       <Button layoutX="816.0" layoutY="14.0" mnemonicParsing="false" text="VIew Cart" />
       <Button fx:id="exitButton" layoutX="824.0" layoutY="543.0" mnemonicParsing="false" onAction="#exitbutton" text="Exit" />
@@ -36,6 +36,17 @@
       <Label layoutX="325.0" layoutY="282.0" text="Label" />
       <Label layoutX="138.0" layoutY="282.0" text="Label" />
       <Button fx:id="logoutButton" layoutX="28.0" layoutY="543.0" mnemonicParsing="false" onAction="#logoutbutton" text="Log Out" />
-      <Slider fx:id="breadSlider" layoutX="80.0" layoutY="194.0" majorTickUnit="2.0" max="10.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Slider fx:id="breadSlider" layoutX="80.0" layoutY="194.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Slider layoutX="269.0" layoutY="194.0" />
+      <Slider layoutX="469.0" layoutY="194.0" />
+      <Slider layoutX="664.0" layoutY="194.0" />
+      <Slider layoutX="79.0" layoutY="352.0" />
+      <Slider layoutX="269.0" layoutY="352.0" />
+      <Slider layoutX="462.0" layoutY="352.0" />
+      <Slider layoutX="664.0" layoutY="352.0" />
+      <Slider layoutX="79.0" layoutY="523.0" />
+      <Slider layoutX="255.0" layoutY="523.0" />
+      <Slider layoutX="455.0" layoutY="523.0" />
+      <Slider layoutX="664.0" layoutY="523.0" />
    </children>
 </AnchorPane>

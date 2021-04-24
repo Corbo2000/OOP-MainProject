@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resources.OrdertableView">
+   <children>
+      <TableView layoutX="125.0" layoutY="85.0" prefHeight="233.0" prefWidth="409.0">
+        <columns>
+          <TableColumn prefWidth="168.1697998046875" text="User ID" />
+          <TableColumn minWidth="0.0" prefWidth="184.132080078125" text="Order Confirmation Nimber" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
