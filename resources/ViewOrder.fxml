@@ -36,5 +36,6 @@
       <Label layoutX="325.0" layoutY="282.0" text="Label" />
       <Label layoutX="138.0" layoutY="282.0" text="Label" />
       <Button fx:id="logoutButton" layoutX="28.0" layoutY="543.0" mnemonicParsing="false" onAction="#logoutbutton" text="Log Out" />
+      <Slider fx:id="breadSlider" layoutX="180.0" layoutY="152.0" max="5.0" min="1.0" prefHeight="14.0" prefWidth="66.0" showTickLabels="true" showTickMarks="true" />
    </children>
 </AnchorPane>

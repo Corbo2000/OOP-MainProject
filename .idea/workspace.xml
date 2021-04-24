@@ -1,35 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="GUI now taking shape with packages added for structure">
-      <change afterPath="$PROJECT_DIR$/Controllers/vieworderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jpegs/download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jpegs/download1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jpegs/download2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jpegs/images.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jpegs/images1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jpegs/images2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/ViewOrder.fxml" afterDir="false" />
+    <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="View Order Scene added">
+      <change afterPath="$PROJECT_DIR$/Controllers/chooseoptionsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/chooseOptions.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/createController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/createController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/vieworderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/vieworderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/accounts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Bank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Supplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/OOP_MainProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/OOP_MainProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/accounts.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/CreateAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/CreateAccount.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/LogIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/LogIn.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/Welcome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/CreateAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/CreateAccount.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/LogIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/LogIn.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/Welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Welcome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase/CreateAccountCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/CreateAccountCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/createController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/createController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/loginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/loginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/vieworderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/vieworderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/ViewOrder.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/ViewOrder.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ViewOrder.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/ViewOrder.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618969189781</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="View Order Scene added">
+      <created>1619024510273</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619024510273</updated>
+    </task>
+    <task id="LOCAL-00003" summary="View Order Scene added">
+      <created>1619024624575</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619024624575</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +188,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="GUI now taking shape with packages added for structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI now taking shape with packages added for structure" />
+    <MESSAGE value="View Order Scene added" />
+    <option name="LAST_COMMIT_MESSAGE" value="View Order Scene added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

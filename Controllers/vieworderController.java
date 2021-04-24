@@ -12,6 +12,7 @@ import java.io.IOException;
 public class vieworderController {
     public Button logoutButton;
     public Button exitButton;
+    public Button breadButton;
 
     public void logoutbutton(ActionEvent actionEvent) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("../resources/Welcome.fxml"));
@@ -21,5 +22,8 @@ public class vieworderController {
 
     public void exitbutton(ActionEvent actionEvent) {
         System.exit(0);
+    }
+
+    public void breadbutton(ActionEvent actionEvent) {
     }
 }

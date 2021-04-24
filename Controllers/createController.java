@@ -56,7 +56,7 @@ public class createController {
                 duplicateIDWarning.setText("Account Successfully Created");
                 Parent root = null;
                 try {
-                    root = FXMLLoader.load(getClass().getResource("../resources/ViewOrder.fxml"));
+                    root = FXMLLoader.load(getClass().getResource("../resources/chooseOptions.fxml"));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
