@@ -16,12 +16,24 @@ public class CustomerMenuController {
     public Label welcomeLabel;
     public Button VInvoice;
     public Button mOrder;
+    public Button vOrder;
     public Button exit;
 
-    public void View_SelectItems(ActionEvent event) {
+    public void SelectItems(ActionEvent event) {
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("../resources/ViewOrder.fxml"));
+            root = FXMLLoader.load(getClass().getResource("../resources/itemOrder.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Stage loginStage = (Stage) vsItems.getScene().getWindow();
+        loginStage.setScene(new Scene(root));
+    }
+
+    public void ViewOrder(ActionEvent event) {
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("../resources/tableView.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }

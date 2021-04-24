@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class vieworderController {
+public class itemorderController {
     public Button logoutButton;
     public Button exitButton;
     public Button breadButton;

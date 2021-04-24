@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="GUI now taking shape with packages added for structure" />
+    <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="GUI now taking shape with packages added for structure">
+      <change afterPath="$PROJECT_DIR$/Controllers/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/tableviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currentUser.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/tableView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CustomerMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CustomerMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/createController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/createController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/vieworderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/itemorderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/CustomerMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/CustomerMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ViewOrder.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/itemOrder.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usecase/LogInCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/LogInCase.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="true" />
@@ -40,11 +53,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../javafx-sdk-16/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.ChangelistConflict" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,7 +88,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainProjectPackage.Main" />
       <module name="OOP_MainProject" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\colbi\JavaFX\javafx-sdk-11.0.2\lib --add-modules javafx.controls,javafx.fxml " />
+      <option name="VM_PARAMETERS" value="--module-path C:\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="OOP_MainProject.*" />
