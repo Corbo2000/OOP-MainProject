@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CustomerMenuController">
+   <children>
+      <Button fx:id="vsItems" layoutX="251.0" layoutY="113.0" mnemonicParsing="false" onAction="#View_SelectItems" text="View/Select Items" />
+      <Label fx:id="welcomeLabel" layoutX="249.0" layoutY="68.0" text="Welcome to TopShop" />
+      <Button fx:id="VInvoice" layoutX="265.0" layoutY="165.0" mnemonicParsing="false" onAction="#ViewInvoice" text="View Invoice" />
+      <Button fx:id="mOrder" layoutX="266.0" layoutY="222.0" mnemonicParsing="false" onAction="#MakeOrder" text="Make Order" />
+      <Button fx:id="exit" layoutX="288.0" layoutY="281.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+   </children>
+</AnchorPane>

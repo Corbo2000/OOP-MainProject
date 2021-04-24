@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Slider;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -13,6 +14,7 @@ public class vieworderController {
     public Button logoutButton;
     public Button exitButton;
     public Button breadButton;
+    public Slider breadSlider;
 
     public void logoutbutton(ActionEvent actionEvent) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("../resources/Welcome.fxml"));
@@ -24,6 +26,6 @@ public class vieworderController {
         System.exit(0);
     }
 
-    public void breadbutton(ActionEvent actionEvent) {
+    public void breadbutton(ActionEvent event) {
     }
 }
