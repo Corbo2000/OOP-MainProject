@@ -9,10 +9,10 @@ public class LogInCase {
     public String ID, password, Name, Address, Phone, CCNumber, Type;
     public boolean log(String user, String pass){
         boolean ReturnBoolean = false;
-        File accountsFile = new File("accounts.txt");
-        File cUserFile = new File("currentUser.txt");
+        File accountsFile = new File("TextFiles/accounts.txt");
+        File cUserFile = new File("TextFiles/currentUser.txt");
         String fileLine, userInfo = "";
-
+        String currentFile = "cUserFile";
         /* Old input method
         System.out.println("Please enter your user ID:");
         ID = keyboardInput.nextLine();
@@ -34,19 +34,29 @@ public class LogInCase {
                         if (accountsReader.nextLine().equals(password)) {
 
                             try {
+                                PrintWriter wipe = new PrintWriter(cUserFile);
+                                wipe.print(" ");
+                                System.out.println(ID);
                                 FileWriter writer = new FileWriter(cUserFile, false);
-                                BufferedWriter br = new BufferedWriter(writer);
-                                br.write(ID + "\n" + password + "\n" + Name + "\n" + adress + "\n" + telephone + "\n" + creditCard + "\n" + accountType );
+
+                                writer.write(ID + "\n" + password+"\n");
+                                Name = accountsReader.nextLine();
+                                writer.write(Name+"\n");
+                                Address = accountsReader.nextLine();
+                                writer.write(Address+"\n");
+                                Phone = accountsReader.nextLine();
+                                writer.write(Phone+"\n");
+                                CCNumber = accountsReader.nextLine();
+                                writer.write(CCNumber+"\n");
+                                Type = accountsReader.nextLine();
+                                writer.write(Type+"\n");
+                                writer.close();
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
 
 
-                            Name = accountsReader.nextLine();
-                            Address = accountsReader.nextLine();
-                            Phone = accountsReader.nextLine();
-                            CCNumber = accountsReader.nextLine();
-                            Type = accountsReader.nextLine();
+
                             ReturnBoolean = true;
                             //main2();
                         }
@@ -65,4 +75,5 @@ public class LogInCase {
 
         return ReturnBoolean;
     }
+
 }

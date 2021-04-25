@@ -15,7 +15,7 @@ class Buffer {
     }
 
     public synchronized long send(String creditCard) {
-        File ccFile = new File("BankCCInfo.txt");
+        File ccFile = new File("TextFiles/BankCCInfo.txt");
         String verifiedCC, newCC;
         this.CC = creditCard;
 

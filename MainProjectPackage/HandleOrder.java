@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class HandleOrder {
     public void SelectItems(String userType, String CC, String ID){
         Scanner keyboard = new Scanner(System.in);
-        File items = new File("ItemCatalog.txt");
+        File items = new File("TextFiles/ItemCatalog.txt");
         List<String> itemList = new ArrayList<String>();
         List<Integer> itemQuantity = new ArrayList<Integer>();
         String[] itemInfo = {"", "", "", ""};
@@ -71,8 +71,8 @@ public class HandleOrder {
     }
 
     public void MakeOrder(List<String> itemList, List<Integer> itemQuantity, float price, String CC, String ID){
-        File ccFile = new File("BankCCInfo.txt");
-        File accounts = new File("accounts.txt");
+        File ccFile = new File("TextFiles/BankCCInfo.txt");
+        File accounts = new File("TextFiles/accounts.txt");
         Buffer buff = new Buffer();
         BankHandler bank = new BankHandler(buff, CC);
         boolean cardFound = false;
@@ -123,7 +123,7 @@ public class HandleOrder {
             System.out.println("Your authorization number is " + authorization);
         }
         //Store the order
-        File orderLog = new File("orders.txt");
+        File orderLog = new File("TextFiles/orders.txt");
         try {
             if (!orderLog.exists()) {
                 orderLog.createNewFile();

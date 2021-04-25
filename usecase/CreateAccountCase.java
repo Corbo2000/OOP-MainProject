@@ -19,7 +19,7 @@ public class CreateAccountCase {
 
 
 
-        File accountsFile = new File("accounts.txt");
+        File accountsFile = new File("TextFiles/accounts.txt");
         try {
             if (!accountsFile.exists()) {
                 accountsFile.createNewFile();

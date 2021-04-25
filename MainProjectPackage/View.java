@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class View {
     public void ViewOrder(String ID){
-        File ordersFile = new File("orders.txt");
+        File ordersFile = new File("TextFiles/orders.txt");
         Scanner keyboard = new Scanner(System.in);
         int i = 0;
         String fileLine, orderID;
@@ -45,7 +45,7 @@ public class View {
     }
 
     public void ViewInvoice(String ID, String CC){
-        File ordersFile = new File("orders.txt");
+        File ordersFile = new File("TextFiles/orders.txt");
         Scanner keyboard = new Scanner(System.in);
         int i = 0;
         String fileLine, orderID;

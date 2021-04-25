@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class SupplierClient {
     public void ProcessOrder(){
-        File ordersFile = new File("orders.txt");
+        File ordersFile = new File("TextFiles/orders.txt");
         File stockFile = new File("stocks.txt");
         Scanner keyboard = new Scanner(System.in);
         int i = 0;
@@ -120,7 +120,7 @@ public class SupplierClient {
     }
 
     public void ShipOrder(){
-        File ordersFile = new File("orders.txt");
+        File ordersFile = new File("TextFiles/orders.txt");
         File stockFile = new File("stocks.txt");
         Scanner keyboard = new Scanner(System.in);
         int i = 0;

@@ -8,7 +8,7 @@ public class LogIn {
     String ID, password, Name, Address, Phone, CCNumber, Type;
     boolean log(String user, String pass){
         boolean ReturnBoolean = false;
-        File accountsFile = new File("accounts.txt");
+        File accountsFile = new File("TextFiles/accounts.txt");
         String fileLine, userInfo = "";
         Scanner keyboardInput = new Scanner(System.in);
         /* Old input method
