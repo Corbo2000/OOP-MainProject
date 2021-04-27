@@ -1,10 +1,10 @@
 package MainProjectPackage;
 
 import java.io.*;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-//import java.text.DecimalFormat;
 
 public class HandleOrder {
     String creditCard, firstTime;
@@ -62,9 +62,9 @@ public class HandleOrder {
                     totalPrice += 40;
                     this.firstTime = "false";
                 }
-                //DecimalFormat df = new DecimalFormat();
-                //df.setMaximumFractionDigits(2);
-                System.out.println("The total comes out to " + totalPrice);
+                DecimalFormat df = new DecimalFormat();
+                df.setMaximumFractionDigits(2);
+                System.out.println("The total comes out to " + df.format(totalPrice));
                 MakeOrder(itemList, itemQuantity, totalPrice, CC, ID);
                 break;
             }

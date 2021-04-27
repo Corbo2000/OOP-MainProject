@@ -5,3 +5,4 @@
 123456;6 apple(s) 1 orange(s) ;70097598;ordered;2021-04-27;12.99
 654321;1 apple(s) 1 milk(s) 1 orange(s) ;50726952;ordered;2021-04-27;14.49
 654321;1 apple(s) 1 milk(s) 2 orange(s) ;47250512;ready;2021-04-27;19.48
+123456;1 apple(s) 1 milk(s) 1 orange(s) ;34458548;ordered;2021-04-27;48.489998
