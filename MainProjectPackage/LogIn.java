@@ -68,8 +68,7 @@ public class LogIn {
                         if (!order.creditCard.equals(CCNumber)){
                             this.CCNumber = order.creditCard;
                         }
-                        if (!this.firstTime.equals(order.firstTime)){
-                            this.firstTime = order.firstTime;
+                        if (this.firstTime.equals(ID + ";true")){
 
                             try {
                                 Scanner fileReader = new Scanner(accounts);
@@ -79,7 +78,7 @@ public class LogIn {
                                 }
                                 String fileContents = buffer.toString();
                                 fileReader.close();
-                                fileContents = fileContents.replaceAll(ID + "\n" + password + "\n" + Name + "\n" + Address + "\n" + Phone + "\n" + CCNumber + "\n" + Type + "\n" + firstTime, ID + "\n" + password + "\n" + Name + "\n" + Address + "\n" + Phone + "\n" + CCNumber + "\n" + Type + "\n" + "false");
+                                fileContents = fileContents.replaceAll(firstTime,ID + ";false");
                                 FileWriter writer = new FileWriter(accounts);
                                 writer.append(fileContents);
                                 writer.flush();

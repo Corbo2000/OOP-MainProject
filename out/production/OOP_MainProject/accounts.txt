@@ -6,7 +6,7 @@ Matt
 555-555-5555
 1111-2222-3333-4444
 premium
-true
+123456;true
 --
 654321
 hello
@@ -15,7 +15,7 @@ Joe
 111-222-1234
 8812-1234-4321-5678
 regular
-null
+654321;null
 --
 987654321
 password
@@ -24,7 +24,7 @@ Null
 Null
 Null
 supplier
-null
+987654321;null
 --
 54321
 goodbye
@@ -33,7 +33,7 @@ Matt
 555-666-7777
 1234-5678-9012-3456
 premium
-false
+54321;true
 --
 7654
 password
@@ -42,7 +42,7 @@ Joey
 555-555-5555
 9999-8888-7777-6666
 premium
-true
+7654;false
 --
 7890
 qwerty
@@ -51,4 +51,13 @@ Mike
 111-222-3333
 1234-1234-5678-5678
 regular
-null
+7890;null
+--
+5555
+qwerty
+Jimmy
+5678 house
+555-555-5555
+1111-2222-3333-4445
+premium
+5555;true

@@ -11,6 +11,7 @@ public class HandleOrder {
     public void SelectItems(String userType, String CC, String ID, String first){
         this.firstTime = first;
         this.creditCard = CC;
+        String[] splitString = {"", ""};
         Scanner keyboard = new Scanner(System.in);
         File items = new File("ItemCatalog.txt");
         List<String> itemList = new ArrayList<String>();
@@ -58,13 +59,14 @@ public class HandleOrder {
                     counter1--;
                     counter2++;
                 }
-                if (firstTime.equals("true")){
+                splitString = firstTime.split(";");
+                if (splitString[1].equals("true")){
                     totalPrice += 40;
-                    this.firstTime = "false";
+                    this.firstTime = ID + ";false";
                 }
                 DecimalFormat df = new DecimalFormat();
                 df.setMaximumFractionDigits(2);
-                System.out.println("The total comes out to " + df.format(totalPrice));
+                System.out.println("The total comes out to $" + df.format(totalPrice));
                 MakeOrder(itemList, itemQuantity, totalPrice, CC, ID);
                 break;
             }

@@ -60,9 +60,9 @@ public class CreateAccount {
                 CC = keyboardInput.nextLine();
 
                 if (accType.equals("premium")){
-                    firstTime = "true";
+                    firstTime = ID + ";true";
                 }else{
-                    firstTime = "null";
+                    firstTime = ID + ";null";
                 }
             }else{
                 name = "Null";
