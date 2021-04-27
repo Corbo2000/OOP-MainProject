@@ -139,7 +139,7 @@ public class HandleOrder {
             for (int i = 0; i < itemList.size(); i++){
                 if (itemQuantity.get(i) > 0){
                     itemInfo = itemList.get(i).split(",", 4);
-                    br.write(itemQuantity.get(i) + " " + itemInfo[0] + "(s) ");
+                    br.write(" " + itemQuantity.get(i) + " " + itemInfo[0] + "(s),");
                 }
             }
             br.write(";" + authorization + ";ordered;");
