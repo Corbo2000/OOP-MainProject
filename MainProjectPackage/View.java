@@ -31,7 +31,7 @@ public class View {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-        System.out.println("Enter ID of order to view");
+        System.out.print("Enter ID of order to view:\n");
         orderID = keyboard.nextLine();
         for (int j = 0; j< allUserOrders.size();j++){
             orderInfo = allUserOrders.get(j).split(";");

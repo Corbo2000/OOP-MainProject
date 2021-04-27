@@ -47,27 +47,33 @@ public class CreateAccount {
                 continue;
             }
 
-            System.out.println("Please enter your name:");
-            name = keyboardInput.nextLine();
-            System.out.println("Please enter your address:");
-            address = keyboardInput.nextLine();
-            System.out.println("Please enter your phone number:");
-            phone = keyboardInput.nextLine();
-            System.out.println("Please enter your credit card number:");
-            CC = keyboardInput.nextLine();
             System.out.println("Please select a premium ($40) or a regular membership or verify that you are a supplier by entering (premium/regular/supplier)");
             accType = keyboardInput.nextLine();
-            //TODO: Charge $40 when premium selected
-
+            if (!accType.equals("supplier")){
+                System.out.println("Please enter your name:");
+                name = keyboardInput.nextLine();
+                System.out.println("Please enter your address:");
+                address = keyboardInput.nextLine();
+                System.out.println("Please enter your phone number:");
+                phone = keyboardInput.nextLine();
+                System.out.println("Please enter your credit card number:");
+                CC = keyboardInput.nextLine();
+                //TODO: Charge $40 when premium selected
+            }else{
+                name = "Null";
+                address = "Null";
+                phone = "Null";
+                CC = "Null";
+            }
             //Write user information to file
-           try {
-               FileWriter writer = new FileWriter(accountsFile, true);
-               BufferedWriter br = new BufferedWriter(writer);
-               br.write("--\n" + ID + "\n" + password + "\n" + name + "\n" + address + "\n" + phone + "\n" + CC + "\n" + accType + "\n");
+            try {
+                FileWriter writer = new FileWriter(accountsFile, true);
+                BufferedWriter br = new BufferedWriter(writer);
+                br.write("--\n" + ID + "\n" + password + "\n" + name + "\n" + address + "\n" + phone + "\n" + CC + "\n" + accType + "\n");
 
-               br.close();
-               writer.close();
-               System.out.println("Account successfully created!");
+                br.close();
+                writer.close();
+                System.out.println("Account successfully created!");
 
             } catch (IOException e) {
                 System.out.println("An error occurred.");

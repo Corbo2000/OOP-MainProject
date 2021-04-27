@@ -1,3 +1,3 @@
-apple(s),21,26
-milk(s),2,12
-orange(s),2,3
+apple(s),20,24
+milk(s),1,12
+orange(s),0,5

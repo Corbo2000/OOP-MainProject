@@ -15,6 +15,18 @@ Joe
 8812-1234-4321-5678
 regular
 --
-123321
-pass
+987654321
+password
+Null
+Null
+Null
+Null
 supplier
+--
+54321
+goodbye
+Matt
+420 my st.
+555-666-7777
+1234-5678-9012-3456
+premium

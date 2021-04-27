@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainProjectPackage/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/CreateAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainProjectPackage/HandleOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/HandleOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainProjectPackage/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/LogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainProjectPackage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/SupplierClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/SupplierClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainProjectPackage/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/accounts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/orders.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/SupplierClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/SupplierClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/orders.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stocks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stocks.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />

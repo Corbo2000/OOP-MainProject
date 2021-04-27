@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class HandleOrder {
+    String creditCard;
     public void SelectItems(String userType, String CC, String ID){
         Scanner keyboard = new Scanner(System.in);
         File items = new File("ItemCatalog.txt");
@@ -97,6 +98,7 @@ public class HandleOrder {
             }
             bank.CC = newCC;
             bank.run();
+            authorization = bank.authorization;
 
             if (bank.authorization == 0){
                 System.out.println("You entered an invalid card. Now exiting...");
@@ -112,6 +114,7 @@ public class HandleOrder {
                 String fileContents = buffer.toString();
                 fileReader.close();
                 fileContents = fileContents.replaceAll(CC, newCC);
+                this.creditCard = newCC;
                 FileWriter writer = new FileWriter(accounts);
                 writer.append(fileContents);
                 writer.flush();
@@ -119,9 +122,8 @@ public class HandleOrder {
                 System.out.println("An error occurred.");
                 e.printStackTrace();
             }
-        }else{
-            System.out.println("Your authorization number is " + authorization);
         }
+        System.out.println("Your authorization number is " + authorization);
         //Store the order
         File orderLog = new File("orders.txt");
         try {
@@ -153,7 +155,6 @@ public class HandleOrder {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-
 
     }
 }
