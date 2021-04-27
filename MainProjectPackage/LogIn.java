@@ -2,10 +2,12 @@ package MainProjectPackage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class LogIn {
-    String ID, password, Name, Address, Phone, CCNumber, Type;
+    String ID, password, Name, Address, Phone, CCNumber, Type, firstTime;
     void log(){
         File accountsFile = new File("accounts.txt");
         String fileLine, userInfo = "";
@@ -29,6 +31,7 @@ public class LogIn {
                             Phone = accountsReader.nextLine();
                             CCNumber = accountsReader.nextLine();
                             Type = accountsReader.nextLine();
+                            firstTime = accountsReader.nextLine();
                             main2();
                             return;
                         }
@@ -48,7 +51,9 @@ public class LogIn {
         // classes
 
         //Temporarily accesses method without user input. Fix later
+
         Scanner keyboard = new Scanner(System.in);
+        File accounts = new File("accounts.txt");
         int choice;
         while(true){
             if (Type.equals("regular") || Type.equals("premium")){
@@ -59,9 +64,29 @@ public class LogIn {
                 choice = keyboard.nextInt();
                 switch(choice){
                     case 1:
-                        order.SelectItems(Type, CCNumber, ID);
+                        order.SelectItems(Type, CCNumber, ID, firstTime);
                         if (!order.creditCard.equals(CCNumber)){
                             this.CCNumber = order.creditCard;
+                        }
+                        if (!this.firstTime.equals(order.firstTime)){
+                            this.firstTime = order.firstTime;
+
+                            try {
+                                Scanner fileReader = new Scanner(accounts);
+                                StringBuffer buffer = new StringBuffer();
+                                while (fileReader.hasNextLine()) {
+                                    buffer.append(fileReader.nextLine()+System.lineSeparator());
+                                }
+                                String fileContents = buffer.toString();
+                                fileReader.close();
+                                fileContents = fileContents.replaceAll(ID + "\n" + password + "\n" + Name + "\n" + Address + "\n" + Phone + "\n" + CCNumber + "\n" + Type + "\n" + firstTime, ID + "\n" + password + "\n" + Name + "\n" + Address + "\n" + Phone + "\n" + CCNumber + "\n" + Type + "\n" + "false");
+                                FileWriter writer = new FileWriter(accounts);
+                                writer.append(fileContents);
+                                writer.flush();
+                            } catch (IOException e) {
+                                System.out.println("An error occurred.");
+                                e.printStackTrace();
+                            }
                         }
                         break;
                     case 2:

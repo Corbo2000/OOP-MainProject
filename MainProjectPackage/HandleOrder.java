@@ -4,10 +4,13 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+//import java.text.DecimalFormat;
 
 public class HandleOrder {
-    String creditCard;
-    public void SelectItems(String userType, String CC, String ID){
+    String creditCard, firstTime;
+    public void SelectItems(String userType, String CC, String ID, String first){
+        this.firstTime = first;
+        this.creditCard = CC;
         Scanner keyboard = new Scanner(System.in);
         File items = new File("ItemCatalog.txt");
         List<String> itemList = new ArrayList<String>();
@@ -55,6 +58,12 @@ public class HandleOrder {
                     counter1--;
                     counter2++;
                 }
+                if (firstTime.equals("true")){
+                    totalPrice += 40;
+                    this.firstTime = "false";
+                }
+                //DecimalFormat df = new DecimalFormat();
+                //df.setMaximumFractionDigits(2);
                 System.out.println("The total comes out to " + totalPrice);
                 MakeOrder(itemList, itemQuantity, totalPrice, CC, ID);
                 break;
@@ -99,6 +108,7 @@ public class HandleOrder {
             bank.CC = newCC;
             bank.run();
             authorization = bank.authorization;
+            this.creditCard = newCC;
 
             if (bank.authorization == 0){
                 System.out.println("You entered an invalid card. Now exiting...");

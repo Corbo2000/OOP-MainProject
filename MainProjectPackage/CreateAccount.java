@@ -7,7 +7,7 @@ public class CreateAccount {
     void accountCreate(){
         Scanner keyboardInput = new Scanner(System.in);
         boolean continueLoop = true;
-        String password, name, address, phone, CC, ID, accType, fileLine;
+        String password, name, address, phone, CC, firstTime = "null", ID, accType, fileLine;
 
         //Create file if necessary
 
@@ -58,7 +58,12 @@ public class CreateAccount {
                 phone = keyboardInput.nextLine();
                 System.out.println("Please enter your credit card number:");
                 CC = keyboardInput.nextLine();
-                //TODO: Charge $40 when premium selected
+
+                if (accType.equals("premium")){
+                    firstTime = "true";
+                }else{
+                    firstTime = "null";
+                }
             }else{
                 name = "Null";
                 address = "Null";
@@ -69,8 +74,7 @@ public class CreateAccount {
             try {
                 FileWriter writer = new FileWriter(accountsFile, true);
                 BufferedWriter br = new BufferedWriter(writer);
-                br.write("--\n" + ID + "\n" + password + "\n" + name + "\n" + address + "\n" + phone + "\n" + CC + "\n" + accType + "\n");
-
+                br.write("--\n" + ID + "\n" + password + "\n" + name + "\n" + address + "\n" + phone + "\n" + CC + "\n" + accType + "\n" + firstTime + "\n");
                 br.close();
                 writer.close();
                 System.out.println("Account successfully created!");

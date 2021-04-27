@@ -6,11 +6,10 @@
       <change beforePath="$PROJECT_DIR$/MainProjectPackage/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/CreateAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainProjectPackage/HandleOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/HandleOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainProjectPackage/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/LogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/accounts.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/orders.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stocks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/CreateAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/CreateAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/HandleOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/HandleOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/LogIn.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,6 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainProjectPackage.Main" />
       <module name="OOP_MainProject" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\wheel\Documents\OOP\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="OOP_MainProject.*" />
