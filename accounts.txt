@@ -6,7 +6,7 @@ Matt
 555-555-5555
 1111-2222-3333-4444
 premium
-123456;false
+123456;true
 --
 654321
 hello
@@ -53,11 +53,3 @@ Mike
 regular
 7890;null
 --
-5555
-qwerty
-Jimmy
-5678 house
-555-555-5555
-1111-2222-3333-4445
-premium
-5555;true

@@ -1,3 +1,3 @@
 apple,"fruit. comes in green or red",1.50,1.00
-milk,"2%. expires 4/20", 5.00, 3.50
+milk,"2%. expires 4/20",5.00,3.50
 orange,"fruit. comes in bundles of 5",4.99,3.99

@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/CreateAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/HandleOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/HandleOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/LogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainProjectPackage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/accounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/orders.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stocks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stocks.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,6 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainProjectPackage.Main" />
       <module name="OOP_MainProject" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\wheel\Documents\OOP\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="OOP_MainProject.*" />
