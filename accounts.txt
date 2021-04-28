@@ -6,7 +6,7 @@ Matt
 555-555-5555
 1111-2222-3333-4444
 premium
-123456;true
+123456;false
 --
 654321
 hello
@@ -31,9 +31,9 @@ goodbye
 Matt
 420 my st.
 555-666-7777
-1234-5678-9012-3456
+1111-2222-3333-4444
 premium
-54321;true
+54321;false
 --
 7654
 password
@@ -53,3 +53,11 @@ Mike
 regular
 7890;null
 --
+NewAccount
+password
+Corbin
+789 Address Lane
+789
+1111-2222-3333-4444
+premium
+NewAccount;false

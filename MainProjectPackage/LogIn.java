@@ -78,7 +78,8 @@ public class LogIn {
                                 }
                                 String fileContents = buffer.toString();
                                 fileReader.close();
-                                fileContents = fileContents.replaceAll(firstTime,ID + ";false");
+                                fileContents = fileContents.replaceAll(firstTime,order.firstTime);
+                                firstTime = order.firstTime;
                                 FileWriter writer = new FileWriter(accounts);
                                 writer.append(fileContents);
                                 writer.flush();

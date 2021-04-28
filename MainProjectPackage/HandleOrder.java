@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class HandleOrder {
     String creditCard, firstTime;
     public void SelectItems(String userType, String CC, String ID, String first){
+        Boolean orderSomething = false;
         this.firstTime = first;
         this.creditCard = CC;
         String[] splitString = {"", ""};
@@ -47,6 +48,10 @@ public class HandleOrder {
                 //Exit
                 break;
             }else if (choice == 0){
+                if(orderSomething == false){
+                    System.out.println("You didnt order anything! Now returning...");
+                    return;
+                }
                 //Process order
                 counter1 = itemQuantity.size();
                 counter2 = 0;
@@ -70,6 +75,7 @@ public class HandleOrder {
                 MakeOrder(itemList, itemQuantity, totalPrice, CC, ID);
                 break;
             }
+            orderSomething = true;
             counter1++;
             itemInfo = itemList.get(choice - 1).split(",", 4);
             if (userType.equals("regular")){
@@ -158,7 +164,9 @@ public class HandleOrder {
             }
             br.write(";" + authorization + ";ordered;");
             br.write(String.valueOf(java.time.LocalDate.now()));
-            br.write(";" + price + "\n");
+            DecimalFormat df = new DecimalFormat();
+            df.setMaximumFractionDigits(2);
+            br.write(";" + df.format(price) + "\n");
             br.close();
             writer.close();
             System.out.println("Order successfully placed!");
