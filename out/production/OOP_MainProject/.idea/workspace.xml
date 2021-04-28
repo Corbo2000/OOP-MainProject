@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/accounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/orders.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/stocks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/stocks.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../javafx-sdk-16/lib" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.ChangelistConflict" />

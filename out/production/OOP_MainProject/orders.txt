@@ -1,3 +1,5 @@
 123456;2 apple(s) 2 milk(s) 3 orange(s) ;1555567;ordered;2021-04-19;27.97
 123456;6 apple(s) 1 orange(s) ;70097598;ordered;2021-04-27;12.99
 54321;1 apple(s) 1 milk(s) 1 orange(s) ;32808668;ordered;2021-04-27;48.49
+NewAccount;2 apple(s) 1 milk(s) 1 orange(s) ;21781694;shipped;2021-04-27;52.49
+NewAccount;1 apple(s) 1 orange(s) ;22383050;ordered;2021-04-27;4.99
