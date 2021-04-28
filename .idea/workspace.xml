@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="Added the view order tableview after the view order button.">
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/LogIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/LogIn.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="GUI now taking shape with packages added for structure" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="true" />
@@ -42,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/javafx-sdk-16/lib" />
+    <property name="last_opened_file_path" value="$USER_HOME$/JavaFX/javafx-sdk-16/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -80,7 +78,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainProjectPackage.Main" />
       <module name="OOP_MainProject" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\lolua\Downloads\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml " />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\colbi\JavaFX\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="OOP_MainProject.*" />
@@ -154,14 +152,7 @@
       <option name="project" value="LOCAL" />
       <updated>1619283694859</updated>
     </task>
-    <task id="LOCAL-00003" summary="Added the view order tableview after the view order button.">
-      <created>1619352052630</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1619352052631</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,19 +171,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="GUI now taking shape with packages added for structure" />
     <MESSAGE value="Some new controllers added" />
-    <MESSAGE value="Added the view order tableview after the view order button." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the view order tableview after the view order button." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Controllers/tableviewController.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="Some new controllers added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
