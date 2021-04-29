@@ -1,37 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="891.0" style="-fx-background-color: #5CDB95;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.itemorderController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="891.0" style="-fx-background-color: #FFFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.itemorderController">
    <children>
-      <Button layoutX="816.0" layoutY="14.0" mnemonicParsing="false" text="VIew Cart" />
+      <Button fx:id="viewcartButton" layoutX="816.0" layoutY="14.0" mnemonicParsing="false" onAction="#viewCart" text="VIew Cart" />
+      <Button fx:id="backButton" layoutX="30.0" layoutY="14.0" mnemonicParsing="false" onAction="#backbutton" prefHeight="8.0" prefWidth="54.0" text="Back" />
       <Button fx:id="exitButton" layoutX="824.0" layoutY="543.0" mnemonicParsing="false" onAction="#exitbutton" text="Exit" />
-      <Button fx:id="appleButton" graphicTextGap="2.0" layoutX="189.0" layoutY="265.0" mnemonicParsing="false" onAction="#AppleOrder" style="-fx-background-color: #FFFF;" text="Add to Cart">
+      <Button fx:id="appleButton" graphicTextGap="2.0" layoutX="189.0" layoutY="252.0" mnemonicParsing="false" onAction="#AppleOrder" text="Add to Cart">
          <effect>
             <Blend />
          </effect></Button>
-      <Button layoutX="406.0" layoutY="265.0" mnemonicParsing="false" onAction="#orangeOrder" text="Add to Cart" />
-      <Button fx:id="milkButton" layoutX="621.0" layoutY="265.0" mnemonicParsing="false" text="Add to Cart" />
+      <Button fx:id="orangeButton" layoutX="407.0" layoutY="252.0" mnemonicParsing="false" onAction="#OrangeOrder" text="Add to Cart" />
+      <Button fx:id="milkButton" layoutX="621.0" layoutY="252.0" mnemonicParsing="false" onAction="#MilkOrder" text="Add to Cart" />
       <Label layoutX="194.0" layoutY="166.0" prefHeight="18.0" prefWidth="67.0" text="Red Apple" />
       <Label layoutX="648.0" layoutY="167.0" text="Milk" />
       <Label layoutX="424.0" layoutY="167.0" text="Oranges" />
       <Button fx:id="logoutButton" layoutX="28.0" layoutY="543.0" mnemonicParsing="false" onAction="#logoutbutton" text="Log Out" />
-      <Slider fx:id="appleSlider" layoutX="158.0" layoutY="307.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Slider fx:id="appleSlider" layoutX="156.0" layoutY="288.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
       <Label layoutX="151.0" layoutY="223.0" text="Fruit. Fresh from the orchard." />
       <Label fx:id="AppleOrderLabel" layoutX="192.0" layoutY="353.0" prefHeight="18.0" prefWidth="78.0" />
       <Label layoutX="394.0" layoutY="223.0" text="Comes in bags of 5" />
-      <Slider fx:id="orangeSlider" layoutX="376.0" layoutY="307.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
-      <Label layoutX="594.0" layoutY="223.0" text="2%. Comes by the Gallon" />
-      <Slider fx:id="milkSlider" layoutX="590.0" layoutY="307.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Slider fx:id="orangeSlider" layoutX="376.0" layoutY="288.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Label layoutX="605.0" layoutY="223.0" text="2%. Comes by the Gallon" />
+      <Slider fx:id="milkSlider" layoutX="590.0" layoutY="288.0" majorTickUnit="1.0" max="10.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
       <Label fx:id="OrangeOrderLabel" layoutX="406.0" layoutY="362.0" prefHeight="18.0" prefWidth="78.0" />
       <Label fx:id="MilkOrderLabel" layoutX="621.0" layoutY="362.0" prefHeight="18.0" prefWidth="78.0" />
       <Label layoutX="182.0" layoutY="186.0" text="Regular: $1.50" />
       <Label layoutX="178.0" layoutY="204.0" text="Premium: $1.00" />
-      <Label layoutX="407.0" layoutY="186.0" text="Regular: $4.99" />
+      <Label layoutX="407.0" layoutY="186.0" text="Regular: $4.99">
+         <graphic>
+            <Label />
+         </graphic></Label>
       <Label layoutX="405.0" layoutY="204.0" text="Premium: $3.99" />
       <Label layoutX="622.0" layoutY="186.0" text="Regular: $5.00" />
-      <Label layoutX="618.0" layoutY="204.0" text="Premium: $4.50" />
+
+      <ImageView fitHeight="89.0" fitWidth="101.0" layoutX="168.0" layoutY="66.0">
+         <image>
+            <Image url="@../Jpegs/redapple.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="130.0" layoutX="381.0" layoutY="65.0">
+         <image>
+            <Image url="@../Jpegs/5oranges.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="77.0" layoutX="622.0" layoutY="71.0">
+         <image>
+            <Image url="@../Jpegs/milkimage.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="620.0" layoutY="204.0" text="Premium: $4.50" />
    </children>
 </AnchorPane>

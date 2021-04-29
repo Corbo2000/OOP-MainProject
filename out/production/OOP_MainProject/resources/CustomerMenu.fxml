@@ -11,9 +11,9 @@
          <font>
             <Font name="Lucida Sans Demibold" size="14.0" />
          </font></Button>
-      <Label fx:id="welcomeLabel" layoutX="173.0" layoutY="59.0" text="Welcome to TopShop">
+      <Label fx:id="welcomeLabel" layoutX="264.0" layoutY="46.0" prefHeight="235.0" prefWidth="260.0" text="Welcome to TopShop">
          <font>
-            <Font name="Lucida Fax Demibold" size="24.0" />
+            <Font name="Arial Bold" size="24.0" />
          </font></Label>
       <Button fx:id="VInvoice" layoutX="238.0" layoutY="287.0" mnemonicParsing="false" onAction="#ViewInvoice" prefHeight="64.0" prefWidth="124.0" style="-fx-background-color: #05386B;" text="View Invoice" textFill="#edf5e1">
          <font>
@@ -38,7 +38,7 @@
             <Image url="@../Jpegs/download1.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="247.0" fitWidth="244.0" layoutX="276.0" layoutY="20.0" opacity="0.08">
+      <ImageView fitHeight="247.0" fitWidth="244.0" layoutX="247.0" layoutY="-6.0" opacity="0.08">
          <image>
             <Image url="@../Jpegs/download2.png" />
          </image>

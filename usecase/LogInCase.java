@@ -11,6 +11,7 @@ public class LogInCase {
         boolean ReturnBoolean = false;
         File accountsFile = new File("TextFiles/accounts.txt");
         File cUserFile = new File("TextFiles/currentUser.txt");
+        File cartFile = new File("TextFiles/cartPrice.txt");
         String fileLine, userInfo = "";
         String currentFile = "cUserFile";
         /* Old input method
@@ -35,7 +36,10 @@ public class LogInCase {
 
                             try {
                                 PrintWriter wipe = new PrintWriter(cUserFile);
-                                wipe.print(" ");
+                                wipe.print("");
+                                PrintWriter wipePrice = new PrintWriter(cartFile);
+                                wipePrice.print("");
+                                wipePrice.close();
                                 System.out.println(ID);
                                 FileWriter writer = new FileWriter(cUserFile, false);
 

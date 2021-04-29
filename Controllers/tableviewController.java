@@ -2,12 +2,17 @@ package Controllers;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 import java.io.*;
 import java.net.URL;
@@ -22,7 +27,7 @@ public class tableviewController implements Initializable {
     String[] orderInfo = {"", "", "", ""};
     String fullOrder = "View Order";
 
-
+    public Button backButton;
     @FXML private TableView<Person> tableView;
     @FXML private TableColumn<Person, String> orderNumberColumn;
     @FXML private TableColumn<Person, String> ButtonColumn;
@@ -46,7 +51,6 @@ public class tableviewController implements Initializable {
             wipe.close();
             FileWriter writer = new FileWriter(currentOrders, false);
             while (accountsReader.hasNextLine()) {
-
                 fileLine = accountsReader.nextLine();
                 orderInfo = fileLine.split(";");
                 if (orderInfo[0].equals(userInfo)){
@@ -71,6 +75,12 @@ public class tableviewController implements Initializable {
         return people;
     }
 
+    public void backbutton(ActionEvent actionEvent) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("../resources/CustomerMenu.fxml"));
+
+        Stage backStage = (Stage) backButton.getScene().getWindow();
+        backStage.setScene(new Scene(root));
+    }
 
 
     //public void initData(usecase.LogInCase )

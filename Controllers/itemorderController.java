@@ -9,31 +9,46 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.stage.Stage;
 
-import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class itemorderController {
     public Button logoutButton;
+    public Button backButton;
     public Button exitButton;
     public Button appleButton;
+    public Button orangeButton;
     public Button milkButton;
     public Slider appleSlider;
-    public Label AppleOrderLabel;
     public Slider orangeSlider;
     public Slider milkSlider;
+    public Label AppleOrderLabel;
     public Label OrangeOrderLabel;
     public Label MilkOrderLabel;
-    public String[] cart;
-    public int i = 0; //String index
-
+    public double price;
+    public int value;
+    public String priceString;
+    ArrayList<String> cart = new ArrayList<String>();
+    public File cartpriceFile = new File("TextFiles/cartPrice.txt");
+    public File cartFile = new File("TextFiles/Cart.txt");
+    public Button viewcartButton;
     public void logoutbutton(ActionEvent actionEvent) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("../resources/Welcome.fxml"));
         Stage createStage = (Stage) logoutButton.getScene().getWindow();
         createStage.setScene(new Scene(root));
     }
+    public void backbutton() throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("../resources/CustomerMenu.fxml"));
 
+        Stage backStage = (Stage) backButton.getScene().getWindow();
+        backStage.setScene(new Scene(root));
+        FileWriter writer = new FileWriter(cartpriceFile, false);
+        writer.write("premium");
+        writer.close();
+    }
     public void exitbutton(ActionEvent actionEvent) {
         System.exit(0);
     }
@@ -48,14 +63,164 @@ public class itemorderController {
     }
      */
 
-    public void AppleOrder(ActionEvent event) {
-        if(AppleOrderLabel.getText().isEmpty()){
-            int value = (int) appleSlider.getValue();
-            String orderInput = " " + value + " apple(s),";
-            cart[i] = orderInput;
+    public void AppleOrder(ActionEvent event) throws IOException {
+        String customerType = Files.readAllLines(Paths.get("TextFiles/currentUser.txt")).get(6);
+        System.out.println(customerType);
+        double normalApple = 1.50;
+        double premiumApple = 1.00;
+        if(MilkOrderLabel.getText().isEmpty()){
+            value = (int) appleSlider.getValue();
+            String orderInput = value + " apple(s), ";
+            cart.add(orderInput);
         }
+        Scanner cartScan = new Scanner(cartpriceFile);
+
+        if(!cartScan.hasNextLine()){
+            if(customerType.equals("premium")){
+                price = price +(value*premiumApple);
+            }
+            else if(customerType.equals("regular")){
+                price = price+(value*normalApple);
+            }
+
+            priceString = Double.toString(price);
+            FileWriter writer = new FileWriter(cartpriceFile, false);
+            writer.write(priceString);
+            writer.close();
+        }
+        else if(cartScan.hasNextLine()){
+            priceString = cartScan.nextLine();
+            price = Double.parseDouble(priceString);
+            if(customerType.equals("premium")){
+                price = price +(value*premiumApple);
+            }
+            else if(customerType.equals("regular")){
+                price = price+(value*normalApple);
+            }
+
+            priceString = Double.toString(price);
+            PrintWriter wipe = new PrintWriter(cartpriceFile);
+            wipe.print(" ");
+            wipe.close();
+            FileWriter writer = new FileWriter(cartpriceFile, false);
+            writer.write(priceString);
+            writer.close();
+        }
+        cartScan.close();
     }
 
-    public void orangeOrder(ActionEvent event) {
+    public void OrangeOrder(ActionEvent event) throws IOException {
+        String customerType = Files.readAllLines(Paths.get("TextFiles/currentUser.txt")).get(6);
+        System.out.println(customerType);
+        double normalOrange = 4.99;
+        double premiumOrange = 3.99;
+        if(MilkOrderLabel.getText().isEmpty()){
+            value = (int) orangeSlider.getValue();
+            String orderInput = value + " orange(s),";
+            cart.add(orderInput);
+        }
+        Scanner cartScan = new Scanner(cartpriceFile);
+
+        if(!cartScan.hasNextLine()){
+            if(customerType.equals("premium")){
+                price = price +(value*premiumOrange);
+            }
+            else if(customerType.equals("regular")){
+                price = price+(value*normalOrange);
+            }
+
+            priceString = Double.toString(price);
+            FileWriter writer = new FileWriter(cartpriceFile, false);
+            writer.write(priceString);
+            writer.close();
+        }
+        else if(cartScan.hasNextLine()){
+            priceString = cartScan.nextLine();
+            price = Double.parseDouble(priceString);
+            if(customerType.equals("premium")){
+                price = price +(value*premiumOrange);
+            }
+            else if(customerType.equals("regular")){
+                price = price+(value*normalOrange);
+            }
+
+            priceString = Double.toString(price);
+            PrintWriter wipe = new PrintWriter(cartpriceFile);
+            wipe.print(" ");
+            wipe.close();
+            FileWriter writer = new FileWriter(cartpriceFile, false);
+            writer.write(priceString);
+            writer.close();
+        }
+        cartScan.close();
+    }
+    public void MilkOrder(ActionEvent event) throws IOException {
+        String customerType = Files.readAllLines(Paths.get("TextFiles/currentUser.txt")).get(6);
+        System.out.println(customerType);
+        double normalMilk = 5;
+        double premiumMilk = 4.50;
+        if(MilkOrderLabel.getText().isEmpty()){
+            value = (int) milkSlider.getValue();
+            String orderInput = value + " milk(s),";
+            cart.add(orderInput);
+        }
+        Scanner cartScan = new Scanner(cartpriceFile);
+
+        if(!cartScan.hasNextLine()){
+            if(customerType.equals("premium")){
+                price = price +(value*premiumMilk);
+            }
+            else if(customerType.equals("regular")){
+                price = price+(value*normalMilk);
+            }
+
+            priceString = Double.toString(price);
+            FileWriter writer = new FileWriter(cartpriceFile, false);
+            writer.write(priceString);
+            writer.close();
+        }
+        else if(cartScan.hasNextLine()){
+            priceString = cartScan.nextLine();
+            price = Double.parseDouble(priceString);
+            if(customerType.equals("premium")){
+                price = price +(value*premiumMilk);
+            }
+            else if(customerType.equals("regular")){
+                price = price+(value*normalMilk);
+            }
+
+            priceString = Double.toString(price);
+            PrintWriter wipe = new PrintWriter(cartpriceFile);
+            wipe.print(" ");
+            wipe.close();
+            FileWriter writer = new FileWriter(cartpriceFile, false);
+            writer.write(priceString);
+            writer.close();
+        }
+        cartScan.close();
+    }
+
+    public void viewCart(ActionEvent actionEvent) throws IOException {
+        Writer writer = new FileWriter(cartFile);
+        for(int i=0;i<cart.size();i++){
+            System.out.print(cart.get(i));
+            writer.write(cart.get(i));
+        }
+        Scanner cartScan = new Scanner(cartpriceFile);
+        if(cartScan.hasNextLine()){
+            String price = ";$"+cartScan.nextLine();
+            System.out.print(price);
+            writer.write(price);
+        }
+        else if(!cartScan.hasNextLine()){
+            System.out.print("Cart is empty");
+        }
+        writer.close();
+        cartScan.close();
+        Parent root = FXMLLoader.load(getClass().getResource("../resources/cartView.fxml"));
+
+
+        Stage backStage = (Stage) viewcartButton.getScene().getWindow();
+        backStage.setScene(new Scene(root));
     }
 }
