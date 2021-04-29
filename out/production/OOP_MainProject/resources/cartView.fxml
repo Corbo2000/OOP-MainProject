@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.cartviewController">
+   <children>
+      <TableView fx:id="cartviewTable" layoutX="173.0" layoutY="78.0" prefHeight="57.0" prefWidth="334.0">
+        <columns>
+          <TableColumn fx:id="CartItemsColumn" prefWidth="206.37738037109375" text="Items" />
+          <TableColumn fx:id="CartTotalColumn" prefWidth="126.0" text="Total" />
+        </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backbutton" text="Back" />
+      <Button fx:id="exitButton" layoutX="535.0" layoutY="360.0" mnemonicParsing="false" onAction="#exitbutton" text="Exit" />
+      <Button fx:id="makeorderButton" layoutX="300.0" layoutY="200.0" mnemonicParsing="false" onAction="#makeorderbutton" text="Order Now!" />
+   </children>
+</AnchorPane>
