@@ -2,10 +2,10 @@ package MainProjectPackage;
 
 public class BankHandler extends Thread{
     HandleOrder producer;
-    long authorization;
+    public long authorization;
 
     private Buffer buff;
-    String CC;
+    public String CC;
     public BankHandler(Buffer buff, String CC){
         this.buff = buff;
         this.CC = CC;

@@ -44,7 +44,7 @@ public class CustomerMenuController {
     public void ViewInvoice(ActionEvent event) {
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("../resources/ViewInvoice.fxml"));
+            root = FXMLLoader.load(getClass().getResource("../resources/invoicetable.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }

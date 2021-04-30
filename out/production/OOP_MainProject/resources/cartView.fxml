@@ -11,7 +11,7 @@
           <TableColumn fx:id="CartTotalColumn" prefWidth="126.0" text="Total" />
         </columns>
       </TableView>
-      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backbutton" text="Back" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backbutton" text="Discard Order" />
       <Button fx:id="exitButton" layoutX="535.0" layoutY="360.0" mnemonicParsing="false" onAction="#exitbutton" text="Exit" />
       <Button fx:id="makeorderButton" layoutX="300.0" layoutY="200.0" mnemonicParsing="false" onAction="#makeorderbutton" text="Order Now!" />
    </children>

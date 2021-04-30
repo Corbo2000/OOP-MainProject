@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class SupplierClient {
     public void ProcessOrder(){
         File ordersFile = new File("TextFiles/orders.txt");
-        File stockFile = new File("stocks.txt");
+        File stockFile = new File("TextFiles/stocks.txt");
         Scanner keyboard = new Scanner(System.in);
         int i = 0;
         String fileLine, orderID;
@@ -121,7 +121,7 @@ public class SupplierClient {
 
     public void ShipOrder(){
         File ordersFile = new File("TextFiles/orders.txt");
-        File stockFile = new File("stocks.txt");
+        File stockFile = new File("TextFiles/stocks.txt");
         Scanner keyboard = new Scanner(System.in);
         int i = 0;
         String fileLine, orderID;
@@ -228,7 +228,7 @@ public class SupplierClient {
     public void ViewStock(){
         String[] stockList = {"", "", ""};
         try {
-            File stockFile = new File("stocks.txt");
+            File stockFile = new File("TextFiles/stocks.txt");
             Scanner accountsReader = new Scanner(stockFile);
             while (accountsReader.hasNextLine()) {
                 stockList = accountsReader.nextLine().split(",");

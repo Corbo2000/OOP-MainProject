@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-class Buffer {
+public class Buffer {
     boolean messageBufferFull = false;
     boolean responseBufferFull = false;
     String CC;

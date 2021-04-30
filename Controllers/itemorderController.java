@@ -1,5 +1,8 @@
 package Controllers;
 
+import MainProjectPackage.BankHandler;
+import MainProjectPackage.Buffer;
+import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,11 +11,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class itemorderController {
@@ -31,7 +36,22 @@ public class itemorderController {
     public double price;
     public int value;
     public String priceString;
+    public Label emptyCartLabel;
     ArrayList<String> cart = new ArrayList<String>();
+
+
+    private FadeTransition fadeIn = new FadeTransition(
+            Duration.millis(2000)
+    );
+    private void fadeOut(Label emptyCartLabel,int time) {
+        FadeTransition fade = new FadeTransition();
+        fade.setDuration(Duration.millis(time));
+        fade.setNode(emptyCartLabel);
+        fade.setFromValue(1);
+        fade.setToValue(0);
+        fade.play();
+    }
+
     public File cartpriceFile = new File("TextFiles/cartPrice.txt");
     public File cartFile = new File("TextFiles/Cart.txt");
     public Button viewcartButton;
@@ -100,7 +120,7 @@ public class itemorderController {
 
             priceString = Double.toString(price);
             PrintWriter wipe = new PrintWriter(cartpriceFile);
-            wipe.print(" ");
+            wipe.print("");
             wipe.close();
             FileWriter writer = new FileWriter(cartpriceFile, false);
             writer.write(priceString);
@@ -146,7 +166,7 @@ public class itemorderController {
 
             priceString = Double.toString(price);
             PrintWriter wipe = new PrintWriter(cartpriceFile);
-            wipe.print(" ");
+            wipe.print("");
             wipe.close();
             FileWriter writer = new FileWriter(cartpriceFile, false);
             writer.write(priceString);
@@ -191,7 +211,7 @@ public class itemorderController {
 
             priceString = Double.toString(price);
             PrintWriter wipe = new PrintWriter(cartpriceFile);
-            wipe.print(" ");
+            wipe.print("");
             wipe.close();
             FileWriter writer = new FileWriter(cartpriceFile, false);
             writer.write(priceString);
@@ -201,26 +221,35 @@ public class itemorderController {
     }
 
     public void viewCart(ActionEvent actionEvent) throws IOException {
+        emptyCartLabel.setVisible(false);
         Writer writer = new FileWriter(cartFile);
         for(int i=0;i<cart.size();i++){
             System.out.print(cart.get(i));
             writer.write(cart.get(i));
         }
         Scanner cartScan = new Scanner(cartpriceFile);
-        if(cartScan.hasNextLine()){
+        if(!cartScan.hasNextLine()){
+            System.out.print("Cart is empty");
+            if(!emptyCartLabel.isVisible()){
+                emptyCartLabel.setVisible(true);
+                fadeOut(emptyCartLabel,2000);
+            }
+        }
+        else if(cartScan.hasNextLine()){
             String price = ";$"+cartScan.nextLine();
             System.out.print(price);
             writer.write(price);
+            writer.close();
+            cartScan.close();
+            Parent root = FXMLLoader.load(getClass().getResource("../resources/cartView.fxml"));
+            Stage backStage = (Stage) viewcartButton.getScene().getWindow();
+            backStage.setScene(new Scene(root));
+
         }
-        else if(!cartScan.hasNextLine()){
-            System.out.print("Cart is empty");
-        }
-        writer.close();
-        cartScan.close();
-        Parent root = FXMLLoader.load(getClass().getResource("../resources/cartView.fxml"));
 
 
-        Stage backStage = (Stage) viewcartButton.getScene().getWindow();
-        backStage.setScene(new Scene(root));
+
+
     }
+
 }

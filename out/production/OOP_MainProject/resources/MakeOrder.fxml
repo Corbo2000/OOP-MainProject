@@ -2,12 +2,17 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.makeOrderController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.makeOrderController">
    <children>
-      <Label layoutX="191.0" layoutY="95.0" text="Your Order has been verified, Thank You!" />
-      <Label layoutX="57.0" layoutY="113.0" text="(This still needs code, this is also just a verification scene, the only thig to do here is go back" />
-      <Button fx:id="back" layoutX="274.0" layoutY="188.0" mnemonicParsing="false" onAction="#backtoMenu" text="Back" />
+      <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backtoMenu" text="Back" />
+      <RadioButton fx:id="instoreRadio" layoutX="142.0" layoutY="219.0" mnemonicParsing="false" onAction="#instoreradio" text="In-Store pick-up" />
+      <RadioButton fx:id="mailRadio" layoutX="345.0" layoutY="219.0" mnemonicParsing="false" onAction="#mailradio" text="Mail order(+$3.00)" />
+      <Label layoutX="154.0" layoutY="83.0" prefHeight="82.0" prefWidth="291.0" text="Select a delivery Option">
+         <font>
+            <Font name="Lucida Fax Regular" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

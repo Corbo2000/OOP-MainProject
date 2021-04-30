@@ -12,7 +12,6 @@ public class Person {
         this.button = new SimpleStringProperty(button);
     }
     public String getOrderNumber(){
-
         return orderNumber.get();
     }
 

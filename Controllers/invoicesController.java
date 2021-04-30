@@ -19,10 +19,12 @@ import javafx.stage.Stage;
 
 import java.io.*;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
-public class tableviewController implements Initializable {
+public class invoicesController implements Initializable {
     File accountsFile = new File("TextFiles/orders.txt");
     File currentUser = new File("TextFiles/currentUser.txt");
     File currentOrders = new File("TextFiles/currentUserOrders.txt");
@@ -51,7 +53,7 @@ public class tableviewController implements Initializable {
             Scanner CurrentUser = new Scanner(currentUser);
             userInfo = CurrentUser.nextLine();
             PrintWriter wipe = new PrintWriter(currentOrders);
-            wipe.print("");
+            wipe.print(" ");
             wipe.close();
             FileWriter writer = new FileWriter(currentOrders, false);
             while (accountsReader.hasNextLine()) {
@@ -86,7 +88,7 @@ public class tableviewController implements Initializable {
         backStage.setScene(new Scene(root));
     }
     @FXML
-    public void clickItem(MouseEvent event) throws IOException {
+    public void clickinvoiceItem(MouseEvent event) throws IOException {
 
         String confirmNumber = tableView.getSelectionModel().getSelectedItem().getOrderNumber();
         try {
@@ -109,11 +111,11 @@ public class tableviewController implements Initializable {
         }
 
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("../resources/viewOrder.fxml"));
+        loader.setLocation(getClass().getResource("../resources/viewInvoice.fxml"));
         Parent root = loader.load();
-        vieworderController controller = loader.getController();
+        viewinvoiceController invoicecontroller = loader.getController();
         orderInfo = actualOrder.split(";");
-        controller.textSetter(orderInfo[2],orderInfo[1],orderInfo[3],orderInfo[4]);
+        invoicecontroller.textSetter(orderInfo[4],orderInfo[1],"$"+orderInfo[5], Files.readAllLines(Paths.get("TextFiles/currentUser.txt")).get(5));
         Stage backStage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         backStage.setScene(new Scene(root));
 

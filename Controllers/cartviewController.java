@@ -1,5 +1,7 @@
 package Controllers;
 
+import MainProjectPackage.BankHandler;
+import MainProjectPackage.Buffer;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -17,32 +19,39 @@ import javafx.stage.Stage;
 
 import java.io.*;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
 
 public class cartviewController implements Initializable {
     public File cartFile = new File("TextFiles/Cart.txt");
+    public File cartPrice = new File("TextFiles/cartPrice.txt");
     public Button makeorderButton;
+    public Button exitButton;
 
     String fileLine, userInfo = "";
     String[] cartInfo = {"", ""};
     String fullOrder = "View Order";
 
     public Button backButton;
-    @FXML private TableView<cartView> cartviewTable;
-    @FXML private TableColumn<cartView, String> CartItemsColumn;
-    @FXML private TableColumn<cartView, String> CartTotalColumn;
+    @FXML
+    private TableView<cartView> cartviewTable;
+    @FXML
+    private TableColumn<cartView, String> CartItemsColumn;
+    @FXML
+    private TableColumn<cartView, String> CartTotalColumn;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        CartItemsColumn.setCellValueFactory(new PropertyValueFactory<cartView,String>("cartItems"));
+        CartItemsColumn.setCellValueFactory(new PropertyValueFactory<cartView, String>("cartItems"));
         CartTotalColumn.setCellValueFactory(new PropertyValueFactory<cartView, String>("cartTotal"));
         cartviewTable.setItems(getCartItems());
 
     }
-    public ObservableList<cartView> getCartItems(){
-        ObservableList <cartView> people = FXCollections.observableArrayList();
+
+    public ObservableList<cartView> getCartItems() {
+        ObservableList<cartView> people = FXCollections.observableArrayList();
 
         try {
 
@@ -50,8 +59,8 @@ public class cartviewController implements Initializable {
 
             while (cartScan.hasNextLine()) {
                 userInfo = cartScan.nextLine();
-                System.out.println("This is the actual line from cart:"+userInfo);
-                System.out.println("This is userinfo:"+userInfo);
+                System.out.println("This is the actual line from cart: " + userInfo);
+                System.out.println("This is userinfo: " + userInfo);
                 cartInfo = userInfo.split(";");
                 people.add(new cartView(cartInfo[0], cartInfo[1]));
 
@@ -67,18 +76,25 @@ public class cartviewController implements Initializable {
 
     public void backbutton(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("../resources/itemOrder.fxml"));
-
+        PrintWriter wipe = new PrintWriter(cartPrice);
+        wipe.print("");
+        wipe.close();
+        PrintWriter wipeScan = new PrintWriter(cartFile);
+        wipeScan.print("");
+        wipeScan.close();
         Stage backStage = (Stage) backButton.getScene().getWindow();
         backStage.setScene(new Scene(root));
     }
+
     public void exitbutton(ActionEvent actionEvent) {
         System.exit(0);
     }
 
-    public void makeorderbutton(ActionEvent actionEvent) {
+    public void makeorderbutton(ActionEvent actionEvent) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("../resources/MakeOrder.fxml"));
+        Stage backStage = (Stage) makeorderButton.getScene().getWindow();
+        backStage.setScene(new Scene(root));
+
     }
-
-
-    //public void initData(usecase.LogInCase )
 
 }

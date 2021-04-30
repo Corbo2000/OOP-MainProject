@@ -7,8 +7,9 @@ import java.util.Scanner;
 
 public class LogInCase {
     public String ID, password, Name, Address, Phone, CCNumber, Type;
-    public boolean log(String user, String pass){
-        boolean ReturnBoolean = false;
+    public String[] log(String user, String pass){
+        String[] userType= {"",""};
+        String ReturnBoolean = "false";
         File accountsFile = new File("TextFiles/accounts.txt");
         File cUserFile = new File("TextFiles/currentUser.txt");
         File cartFile = new File("TextFiles/cartPrice.txt");
@@ -35,6 +36,7 @@ public class LogInCase {
                         if (accountsReader.nextLine().equals(password)) {
 
                             try {
+
                                 PrintWriter wipe = new PrintWriter(cUserFile);
                                 wipe.print("");
                                 PrintWriter wipePrice = new PrintWriter(cartFile);
@@ -61,7 +63,8 @@ public class LogInCase {
 
 
 
-                            ReturnBoolean = true;
+                            ReturnBoolean = "true";
+                            userType = new String[]{ReturnBoolean, Type};
                             //main2();
                         }
                     }
@@ -73,11 +76,12 @@ public class LogInCase {
             e.printStackTrace();
         }
 
+
         /*public void setUserName(String user) {
             this.ID = new String(user);
         }*/
 
-        return ReturnBoolean;
+        return userType;
     }
 
 }
