@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="514.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ShipOrderController2">
+    <children>
+        <Button fx:id="backButton" layoutX="30.0" layoutY="14.0" mnemonicParsing="false" onAction="#backbutton" prefHeight="8.0" prefWidth="54.0" text="Back" />
+        <TableView fx:id="tableView" layoutX="83.0" layoutY="76.0" onMouseClicked="#clickItem" prefHeight="290.0" prefWidth="665.0">
+            <columns>
+                <TableColumn fx:id="orderIDColumn" prefWidth="77.88677978515625" text="UserID" />
+                <TableColumn fx:id="orderNumberColumn" prefWidth="106.8868408203125" text="Order Number" />
+                <TableColumn fx:id="orderItemColumn" prefWidth="353.924560546875" text="Order Items" />
+                <TableColumn fx:id="ButtonColumn" minWidth="8.90570068359375" prefWidth="126.07550048828125" />
+            </columns>
+        </TableView>
+        <Label fx:id="noOrderLabel" layoutX="572.0" layoutY="40.0" text="There are no orders for you to process." />
+        <Label fx:id="OrderSuccess" layoutX="544.0" layoutY="390.0" prefHeight="43.0" prefWidth="255.0" text="Order Successfully processed!" visible="false">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

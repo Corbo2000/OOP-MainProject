@@ -5,21 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="Added all user usecases and supplier process order but stock problem">
-      <change afterPath="$PROJECT_DIR$/resources/viewStock.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/ShipOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/shipOrder2.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/SupplierOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/SupplierOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/itemorderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/itemorderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextFiles/ReadyOrders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/ReadyOrders.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextFiles/currentUser.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/currentUser.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextFiles/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/orders.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextFiles/stocks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/stocks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/ShipOrderController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ShipOrderController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/SupplierOrderController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/SupplierOrderController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextFiles/currentUserOrders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/currentUserOrders.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/ShipOrderController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/ShipOrderController2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/itemorderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/itemorderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/ReadyOrders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/ReadyOrders.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierOrderController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierOrderController2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/cartPrice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/cartPrice.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/currentUser.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/currentUser.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/currentUserOrders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/currentUserOrders.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/orders.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/stocks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/stocks.txt" afterDir="false" />
     </list>
@@ -32,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
