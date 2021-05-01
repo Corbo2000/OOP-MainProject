@@ -5,32 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="Added all user usecases and supplier process order but stock problem">
-      <change afterPath="$PROJECT_DIR$/Controllers/ShipOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/shipOrder2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/ViewStockController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/StockView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/ShipOrderController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ShipOrderController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CustomerMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CustomerMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/SupplierMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/SupplierMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/SupplierOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/SupplierOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/SupplierOrderController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/SupplierOrderController2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/itemorderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/itemorderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/makeOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/makeOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/SupplierClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/SupplierClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextFiles/ReadyOrders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/ReadyOrders.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextFiles/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/orders.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextFiles/stocks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/stocks.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/CustomerMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/CustomerMenuController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/ShipOrderController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/ShipOrderController2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierMenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierOrderController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierOrderController2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/itemorderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/itemorderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/makeOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/makeOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/SupplierClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/SupplierClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/OrderedOrders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/OrderedOrders.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/ReadyOrders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/ReadyOrders.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/orders.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/stocks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/stocks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/shipOrderView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/shipOrderView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/shipOrderView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/shipOrderView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/CustomerMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/CustomerMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/SupplierMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/resources/SupplierMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/CustomerMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/CustomerMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/SupplierMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/SupplierMenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619830794178</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added all user usecases and supplier process order but stock problem">
+      <created>1619838274188</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1619838274188</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

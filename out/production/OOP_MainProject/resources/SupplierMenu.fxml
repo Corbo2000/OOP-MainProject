@@ -54,5 +54,6 @@
                 <Image url="@../Jpegs/images2.png" />
             </image>
         </ImageView>
+      <Button fx:id="logoutButton" layoutX="32.0" layoutY="522.0" mnemonicParsing="false" onAction="#logout" text="Log-Out" />
     </children>
 </AnchorPane>

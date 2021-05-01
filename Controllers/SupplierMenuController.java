@@ -6,6 +6,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -21,18 +22,61 @@ public class SupplierMenuController {
     public Button VInvoice;
     public Button exit;
     public Button mOrder;
+    public Button logoutButton;
+    public Label appleAvail;
+    public Label appleProcess;
+    public Label milkAvail;
+    public Label milkProcess;
+    public Label orangeAvail;
+    public Label orangeProcess;
 
     public void exit(ActionEvent actionEvent) {
         System.exit(0);
     }
 
-    public void ViewStock(ActionEvent actionEvent) {
+    public void ViewStock(ActionEvent actionEvent) throws IOException {
+
+        File stockReader = new File("TextFiles/stocks.txt");
+        String[] stockInfo = {"", "", ""};
+        String fileLine = "";
+        int i =0;
+        Scanner stockRead;
+
+        {
+            try {
+                stockRead = new Scanner(stockReader);
+                while (stockRead.hasNextLine()) {
+                    fileLine = stockRead.nextLine();
+                    stockInfo = fileLine.split(",");
+                    if (i ==0){
+                        appleAvail.setText(stockInfo[1]);
+                        appleProcess.setText(stockInfo[2]);
+                    }
+                    else if (i ==1){
+                        milkAvail.setText(stockInfo[1]);
+                        milkProcess.setText(stockInfo[2]);
+                    }
+                    else if (i ==2){
+                        orangeAvail.setText(stockInfo[1]);
+                        orangeProcess.setText(stockInfo[2]);
+                    }
+                    i++;
+
+                }
+                stockRead.close();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+        Parent root = FXMLLoader.load(getClass().getResource("../resources/StockView.fxml"));
+        Stage view = (Stage) mOrder.getScene().getWindow();
+        view.setScene(new Scene(root));
     }
 
     public void ShipOrders(ActionEvent actionEvent) {
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("../resources/shipOrderView.fxml"));
+            root = FXMLLoader.load(getClass().getResource("../resources/StockView.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -152,5 +196,16 @@ public class SupplierMenuController {
 
             }
         }
+    }
+
+    public void logout(ActionEvent actionEvent) {
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("../resources/Welcome.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Stage loginStage = (Stage) logoutButton.getScene().getWindow();
+        loginStage.setScene(new Scene(root));
     }
 }

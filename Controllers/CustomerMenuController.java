@@ -18,6 +18,7 @@ public class CustomerMenuController {
     public Button mOrder;
     public Button vOrder;
     public Button exit;
+    public Button logoutButton;
 
     public void SelectItems(ActionEvent event) {
         Parent root = null;
@@ -65,5 +66,16 @@ public class CustomerMenuController {
 
     public void exit(ActionEvent event) {
         System.exit(0);
+    }
+
+    public void logout(ActionEvent actionEvent) {
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("../resources/Welcome.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Stage loginStage = (Stage) mOrder.getScene().getWindow();
+        loginStage.setScene(new Scene(root));
     }
 }
