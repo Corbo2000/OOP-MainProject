@@ -136,7 +136,7 @@ public class itemorderController {
         double premiumOrange = 3.99;
         if(MilkOrderLabel.getText().isEmpty()){
             value = (int) orangeSlider.getValue();
-            String orderInput = value + " orange(s),";
+            String orderInput = value + " orange(s), ";
             cart.add(orderInput);
         }
         Scanner cartScan = new Scanner(cartpriceFile);

@@ -156,7 +156,9 @@ public class SupplierOrderController implements Initializable {
                 for (int k = 0; k < itemStocks.size();k++){
                     stockInfo = itemStocks.get(k).split(",",3);
                     for (int y = 0; y < itemInfo.length-1;y = y + 2){
-                        if (itemInfo[y+1].equals(stockInfo[0])){
+                        //System.out.println(itemInfo[y+1] +"=before=" +stockInfo[0]+",");
+                        if (itemInfo[y+1].equals(stockInfo[0]+",")){
+                            //System.out.println(itemInfo[y+1] +"==" +stockInfo[0]+",");
                             if (Integer.parseInt(itemInfo[y]) <= Integer.parseInt(stockInfo[1])){
                                 //Item is in stock
                                 stockInfo[2] = String.valueOf(Integer.parseInt(stockInfo[2]) + Integer.parseInt(itemInfo[y]));

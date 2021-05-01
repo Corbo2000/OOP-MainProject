@@ -4,48 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="All user use cases completed.Only supplier use cases left.">
-      <change afterPath="$PROJECT_DIR$/Controllers/ShipOrderController2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/Supplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/SupplierMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/SupplierOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/SupplierOrderController2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/verifyBankController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TextFiles/OrderedOrders.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TextFiles/ReadyOrders.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TextFiles/temporaryHold.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/SupplierMenu.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/shipOrderView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/supplierOrder2.fxml" afterDir="false" />
+    <list default="true" id="048583a7-fa74-4d4a-b5da-d1ba8bb6dac4" name="Default Changelist" comment="Added all user usecases and supplier process order but stock problem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/itemorderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/itemorderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainProjectPackage/SupplierClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/MainProjectPackage/SupplierClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextFiles/cartPrice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/cartPrice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextFiles/currentUser.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/currentUser.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextFiles/currentUserOrders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/currentUserOrders.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/SupplierOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/SupplierOrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TextFiles/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/orders.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TextFiles/stocks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TextFiles/stocks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/libraries/lib1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/itemorderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/itemorderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/loginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/loginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/CreateAccount.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/LogIn.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$CNACall.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$LoginCall.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$cnaHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main$exitHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/SupplierClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/SupplierClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/cartPrice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/cartPrice.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/currentUser.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/currentUser.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/currentUserOrders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/currentUserOrders.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/AuthenticatedView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/CustomerMenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/ShipOrderController2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/Supplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierMenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierOrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/SupplierOrderController2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/ViewInvoice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/cartView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/cartviewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/chooseoptionsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/createController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/invoicesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/itemorderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/loginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/makeOrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/tableviewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/verifyBankController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/viewinvoiceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/vieworderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Controllers/welcomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/BankHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Buffer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/CreateAccount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/HandleOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/LogIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/SupplierClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/MainProjectPackage/View.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/OrderView.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/TextFiles/orders.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/Welcome.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/usecase/LogInCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_MainProject/usecase/LogInCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/supplierMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/supplierOrderView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/verifyOrder.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/verifyOrder.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usecase/LogInCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/usecase/LogInCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/usecase/CreateAccountCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_MainProject/usecase/LogInCase.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +82,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/javafx-sdk-16/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../javafx-sdk-16/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -126,7 +123,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainProjectPackage.Main" />
       <module name="OOP_MainProject" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\lolua\Downloads\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml " />
+      <option name="VM_PARAMETERS" value="--module-path C:\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="OOP_MainProject.*" />
@@ -221,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619784011591</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added all user usecases and supplier process order but stock problem">
+      <created>1619830127587</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619830127587</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,7 +247,8 @@
     <MESSAGE value="Added a view cart scene that takes input from the select item scene" />
     <MESSAGE value="Added a view cart scene that takes input from the select item scene. I added a table view which gets input from the Cart.txt file and displays the items and total. Included are the necessary controllers." />
     <MESSAGE value="All user use cases completed.Only supplier use cases left." />
-    <option name="LAST_COMMIT_MESSAGE" value="All user use cases completed.Only supplier use cases left." />
+    <MESSAGE value="Added all user usecases and supplier process order but stock problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all user usecases and supplier process order but stock problem" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
