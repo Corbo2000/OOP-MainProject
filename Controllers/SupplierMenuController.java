@@ -187,6 +187,7 @@ public class SupplierMenuController {
                             writer.append(fileContents);
                             writer.flush();
                             return;
+
                         }
                     }
                 } catch (IOException e) {
