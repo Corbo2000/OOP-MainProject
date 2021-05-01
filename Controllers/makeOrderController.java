@@ -214,7 +214,7 @@ public class makeOrderController {
             cartScanner.close();
             CartElements = CartLine.split(";");
             FileWriter writer = new FileWriter(AllOrders,true);
-            writer.write("\n"+userID+";"+CartElements[0]+";"+authorization+";"+"ordered"+";"+dateFormat.format(date)+";"+priceString);
+            writer.write(userID+";"+CartElements[0]+";"+authorization+";"+"ordered"+";"+dateFormat.format(date)+";"+priceString);
             writer.close();
             FileWriter currentWriter = new FileWriter(currentOrders,true);
             currentWriter.write(userID+";"+CartElements[0]+";"+authorization+";"+"ordered"+";"+dateFormat.format(date)+";"+priceString);

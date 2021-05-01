@@ -32,7 +32,7 @@ public class SupplierMenuController {
     public void ShipOrders(ActionEvent actionEvent) {
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("../resources/supplierOrderView.fxml"));
+            root = FXMLLoader.load(getClass().getResource("../resources/shipOrderView.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }

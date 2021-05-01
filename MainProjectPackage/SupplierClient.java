@@ -75,6 +75,7 @@ public class SupplierClient {
                         }
                     }
                 }
+                orderInfo[3] = "shipped";
                 //Rewrite stocks file
                 try {
                     FileWriter stockWriter = new FileWriter(stockFile);

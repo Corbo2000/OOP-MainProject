@@ -156,13 +156,15 @@ public class SupplierOrderController2 implements Initializable {
 
         for (int j = 0; j < allUserOrders.size();j++){
             orderInfo = allUserOrders.get(j).split(";");
-            if (orderInfo[2].equals(confirmNumber)){
+            System.out.println("This is the orderInfo[2]: "+orderInfo[2]);
+            System.out.println("This is the order confirm : "+orderInfo[2]);
 
+            if (orderInfo[2].equals(confirmNumber)){
                 itemInfo = orderInfo[1].split(" ");
                 for (int k = 0; k < itemStocks.size();k++){
                     stockInfo = itemStocks.get(k).split(",",3);
                     for (int y = 0; y < itemInfo.length-1;y = y + 2){
-                        if (itemInfo[y+1].equals(stockInfo[0])){
+                        if (itemInfo[y+1].equals(stockInfo[0]+",")){
                             if (Integer.parseInt(itemInfo[y]) <= Integer.parseInt(stockInfo[1])){
                                 //Item is in stock
                                 stockInfo[2] = String.valueOf(Integer.parseInt(stockInfo[2]) + Integer.parseInt(itemInfo[y]));
@@ -171,6 +173,7 @@ public class SupplierOrderController2 implements Initializable {
                                 itemStocks.set(k, stockInfo[0] + "," + stockInfo[1] + "," + stockInfo[2]);
                             }else{
                                 System.out.println("Stock of " + stockInfo[0] + " is too low");
+                                return;
                             }
                         }
                     }
