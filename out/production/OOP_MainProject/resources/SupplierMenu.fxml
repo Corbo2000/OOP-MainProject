@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SupplierMenuController">
+    <children>
+        <Button fx:id="vsItems" layoutX="74.0" layoutY="287.0" mnemonicParsing="false" onAction="#ProcessOrders" prefHeight="64.0" prefWidth="142.0" style="-fx-background-color: #05386B;" text="Process Orders" textFill="#edf5e1" AnchorPane.leftAnchor="74.0">
+            <font>
+                <Font name="Lucida Sans Demibold" size="14.0" />
+            </font></Button>
+        <Label fx:id="welcomeLabel" layoutX="264.0" layoutY="46.0" prefHeight="235.0" prefWidth="299.0" text="Welcome to TopShop    (Supplier)" wrapText="true">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font></Label>
+        <Button fx:id="VInvoice" layoutX="334.0" layoutY="287.0" mnemonicParsing="false" onAction="#ShipOrders" prefHeight="64.0" prefWidth="124.0" style="-fx-background-color: #05386B;" text="Ship Orders" textFill="#edf5e1">
+            <font>
+                <Font name="Lucida Sans Demibold" size="14.0" />
+            </font></Button>
+        <Button fx:id="mOrder" layoutX="593.0" layoutY="287.0" mnemonicParsing="false" onAction="#ViewStock" prefHeight="64.0" prefWidth="124.0" style="-fx-background-color: #05386B;" text="View Stock" textFill="#edf5e1">
+            <font>
+                <Font name="Lucida Sans Demibold" size="14.0" />
+            </font></Button>
+        <Button fx:id="exit" layoutX="741.0" layoutY="522.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: #fa0101;" text="Exit" />
+        <ImageView fitHeight="235.0" fitWidth="235.0" layoutX="538.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Jpegs/download.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="200.0" fitWidth="190.0" layoutX="9.0" layoutY="87.0" opacity="0.14">
+            <image>
+                <Image url="@../Jpegs/download1.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="247.0" fitWidth="244.0" layoutX="247.0" layoutY="-6.0" opacity="0.08">
+            <image>
+                <Image url="@../Jpegs/download2.png" />
+            </image>
+        </ImageView>
+        <ImageView layoutX="317.0" layoutY="353.0" opacity="0.06">
+            <image>
+                <Image url="@../Jpegs/images.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="115.0" fitWidth="200.0" layoutX="9.0" layoutY="448.0" opacity="0.09">
+            <image>
+                <Image url="@../Jpegs/images1.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="117.0" fitWidth="104.0" layoutX="684.0" layoutY="405.0" opacity="0.09">
+            <image>
+                <Image url="@../Jpegs/images2.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

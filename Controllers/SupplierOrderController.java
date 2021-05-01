@@ -116,7 +116,6 @@ public class SupplierOrderController implements Initializable {
     @FXML
     public void clickItem(MouseEvent event) throws IOException {
         generate();
-
         int i = 0;
         String confirmNumber = tableView.getSelectionModel().getSelectedItem().getOrderNumber();
         List<String> itemStocks = new ArrayList<String>();
@@ -199,7 +198,6 @@ public class SupplierOrderController implements Initializable {
                         else if(!orderInfo[3].equals("ordered")){
                             orderInfo[3] = "ordered";
                         }
-
                     }
                     orderOrders.close();
                 } catch (FileNotFoundException e) {
