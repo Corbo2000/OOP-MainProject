@@ -46,16 +46,23 @@ public class LogInCase {
                                 FileWriter writer = new FileWriter(cUserFile, false);
 
                                 writer.write(ID + "\n" + password+"\n");
+
                                 Name = accountsReader.nextLine();
                                 writer.write(Name+"\n");
-                                Address = accountsReader.nextLine();
-                                writer.write(Address+"\n");
-                                Phone = accountsReader.nextLine();
-                                writer.write(Phone+"\n");
-                                CCNumber = accountsReader.nextLine();
-                                writer.write(CCNumber+"\n");
-                                Type = accountsReader.nextLine();
-                                writer.write(Type+"\n");
+                                if(accountsReader.hasNextLine()){
+                                    Address = accountsReader.nextLine();
+                                    writer.write(Address+"\n");
+                                    Phone = accountsReader.nextLine();
+                                    writer.write(Phone+"\n");
+                                    CCNumber = accountsReader.nextLine();
+                                    writer.write(CCNumber+"\n");
+                                    Type = accountsReader.nextLine();
+                                    writer.write(Type+"\n");
+                                }
+                                else if(!accountsReader.hasNextLine()){
+                                    Type = Name;
+                                }
+
                                 writer.close();
                             } catch (IOException e) {
                                 e.printStackTrace();

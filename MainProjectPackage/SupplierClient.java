@@ -143,18 +143,15 @@ public class SupplierClient {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-
         //Get the ready orders
         try {
             Scanner accountsReader = new Scanner(ordersFile);
             while (accountsReader.hasNextLine()) {
                 fileLine = accountsReader.nextLine();
                 orderInfo = fileLine.split(";");
-                if (orderInfo[3].equals("ready")){
-                    allUserOrders.add(i, fileLine + "\n");
-                    i++;
-                    System.out.println(i + ") Order ID: " + orderInfo[2]);
-                }
+                allUserOrders.add(i, fileLine + "\n");
+                i++;
+                System.out.println(i + ") Order ID: " + orderInfo[2]);
             }
             accountsReader.close();
         } catch (FileNotFoundException e) {

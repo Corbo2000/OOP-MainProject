@@ -221,7 +221,7 @@ public class itemorderController {
     }
 
     public void viewCart(ActionEvent actionEvent) throws IOException {
-        emptyCartLabel.setVisible(false);
+
         Writer writer = new FileWriter(cartFile);
         for(int i=0;i<cart.size();i++){
             System.out.print(cart.get(i));

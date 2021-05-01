@@ -92,10 +92,10 @@ public class loginController {
                 Stage loginStage = (Stage) loginButton.getScene().getWindow();
                 loginStage.setScene(new Scene(root));
             }
-            else if(userCheck[0].equals("true")&&(userCheck[1].equals(supplier) )){
+            else if(userCheck[0].equals("true")&&(userCheck[1].equals("supplier") )){
                 Parent root = null;
                 try {
-                    root = FXMLLoader.load(getClass().getResource("../resources/CustomerMenu.fxml"));
+                    root = FXMLLoader.load(getClass().getResource("../resources/SupplierMenu.fxml"));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
